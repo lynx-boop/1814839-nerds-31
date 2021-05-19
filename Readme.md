@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Мария Шабан](https://up.htmlacademy.ru/htmlcss/31/user/1814839).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
 
 ---
 
