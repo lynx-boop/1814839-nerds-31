@@ -6,4 +6,86 @@
     <title>HTML Academy: Нёрдс</title>
 </head>
 
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип дизайн-студии Нердс" />
+        </a>
+        <ul>
+            <li> <a href="#">СТУДИЯ</a></li>
+            <li> <a href="#">КЛИЕНТЫ</a></li>
+            <li> <a href="catalog.html">МАГАЗИН</a></li>
+            <li> <a href="#">КОНТАКТЫ</a></li>
+        </ul>
+        <ul>
+            <li> <a href="#">КОРЗИНА</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Магазин готовых шаблонов</h1>
+    </header>
+    <main>
+        <section>
+            <h2 hidden>Фильтр товаров</h2>
+            <form method="get" action="#">
+                <h3>СТОИМОСТЬ</h3>
+                <label>ОТ <input type="text" name="price" value="0"></label>
+                <label>ДО <input type="text" name="price" value="15000"></label>
+            </form>
+            <form method="get" action="#">
+                <fieldset>
+                    <legend>СЕТКА</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" name="grid.system" value="adpt" checked>Адаптивная
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="grid.system" value="fxd">Фиксированная
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="grid.system" value="rbr">Резиновая
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>ОСОБЕННОСТИ</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="slider" checked>Слайдер
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="advantages">Преимущества
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="news" checked>Новости
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="gallery">Галерея
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="basket">Корзина
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit">Показать</button>
+            </form>
+        </section>
+    </main>
+
 </html>
