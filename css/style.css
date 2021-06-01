@@ -3,6 +3,7 @@
     --hover_grey: #DFDFDF;
     --active_grey: #D5D5D5;
     --dark_grey: #4D4D4D;
+    --border_grey: #DBDBDB;
     --basic_red: #FB565A;
     --hover_red: #e74246;
     --active_red: #D7373B;
@@ -200,7 +201,6 @@ a {
 
 .filter_button {
     color: black;
-    background-color: var(--basic_grey);
 }
 
 .filter_button:hover {
@@ -211,4 +211,34 @@ a {
 .filter_button:active {
     color: rgba(0, 0, 0, .30);
     background-color: var(--active_grey);
+}
+
+.page_button {
+    color: black;
+}
+
+.page_button:hover {
+    color: black;
+    background-color: var(--hover_grey);
+}
+
+.page_button:active {
+    color: rgba(0, 0, 0, .30);
+    background-color: var(--active_grey);
+}
+
+.buttons_list a:not([href]) {
+    color: black;
+    border: solid;
+    background-color: white;
+    border-width: 3px;
+    border-color: var(--border_grey);
+}
+
+.footer_location {
+    color: inherit;
+}
+
+.footer_phone {
+    color: inherit;
 }
