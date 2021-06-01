@@ -1,17 +1,17 @@
 :root {
-    --basic-grey: #EEEEEE;
-    --hover-grey: #DFDFDF;
-    --active-grey: #D5D5D5;
-    --dark-grey: #4D4D4D;
-    --basic-red: #FB565A;
+    --basic_grey: #EEEEEE;
+    --hover_grey: #DFDFDF;
+    --active_grey: #D5D5D5;
+    --dark_grey: #4D4D4D;
+    --basic_red: #FB565A;
     --hover_red: #e74246;
     --active_red: #D7373B;
-    --basic-green: #00CA74;
+    --basic_green: #00CA74;
     --hover_green: #00BC6C;
     --active_green: #00AA62;
-    --basic-yellow: #EFC849;
-    --hover-yellow: #EAB534;
-    --active-yellow: #E5A722;
+    --basic_yellow: #EFC849;
+    --hover_yellow: #EAB534;
+    --active_yellow: #E5A722;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--basic-black);
     background-color: white;
 }
@@ -31,20 +31,36 @@ a {
     color: black;
 }
 
-.main_navigation {
-    font-size: 16px;
-    line-height: 30px;
-    color: black;
-    background-color: var(--basic-grey);
-    /*здесь будет серенький бэк на слайды тоже, когда я пойму, как его сделать*/
-}
-
 .list {
     list-style: none;
 }
 
+.main_header_logo img:hover {
+    opacity: 0.7;
+}
+
+.main_header_logo img:active {
+    opacity: 0.3;
+}
+
+.main_navigation {
+    font-size: 16px;
+    line-height: 30px;
+    color: black;
+    background-color: var(--basic_grey);
+    /*здесь будет серенький бэк на слайды тоже, когда я пойму, как его сделать*/
+}
+
+.site_navigation a:hover {
+    color: var(--basic_red);
+}
+
+.site_navigation a:active {
+    color: rgba(0, 0, 0, .30);
+}
+
 .site_navigation a:not([href]) {
-    background-color: var(--basic-red);
+    background-color: var(--basic_red);
     /*потом изменю на тот фон, который будет нужен, если будет нужен*/
 }
 
@@ -53,11 +69,11 @@ a {
 }
 
 .site_navigation a:hover, .site_navigation a:focus {
-    background-color: var(--basic-grey);
+    background-color: var(--basic_grey);
 }
 
 .features_list {
-    background-color: var(--basic-grey);
+    background-color: var(--basic_grey);
     text-align: left;
     /*Я не знаю, как нужно выравнивать этот блок - это же слайды...*/
 }
@@ -74,7 +90,7 @@ a {
 }
 
 .slider_button {
-    background-color: var(--basic-grey);
+    background-color: var(--basic_grey);
 }
 
 .service_item h3 {
@@ -110,7 +126,7 @@ a {
 }
 
 .about_us_image {
-    background-color: var(--basic-grey);
+    background-color: var(--basic_grey);
     /*это здесь на случай, если картинка не загрузится - лайв №4 55мин*/
 }
 
@@ -124,7 +140,7 @@ a {
     color: white;
     vertical-align: middle;
     text-transform: uppercase;
-    background-color: var(--basic-grey);
+    background-color: var(--basic_grey);
     border: none;
 }
 
@@ -132,7 +148,7 @@ a {
 
 .red_button {
     color: white;
-    background-color: var(--basic-red);
+    background-color: var(--basic_red);
 }
 
 .red_button:hover {
@@ -140,50 +156,51 @@ a {
 }
 
 .red_button:active {
+    color: rgba(255, 255, 255, .30);
     background-color: var(--active_red);
 }
 
 .green_button {
     color: white;
-    background-color: var(--basic-green);
+    background-color: var(--basic_green);
 }
 
 .green_button:hover {
     color: white;
-    background-color: var(--hover-green);
+    background-color: var(--hover_green);
 }
 
 .green_button:active {
-    color: white;
-    background-color: var(--active-green);
+    color: rgba(255, 255, 255, .30);
+    background-color: var(--active_green);
 }
 
 .yellow_button {
     color: white;
-    background-color: var(--basic-yellow);
+    background-color: var(--basic_yellow);
 }
 
 .yellow_button:hover {
     color: white;
-    background-color: var(--hover-yellow);
+    background-color: var(--hover_yellow);
 }
 
 .yellow_button:active {
-    color: white;
-    background-color: var(--active-yellow);
+    color: rgba(255, 255, 255, .30);
+    background-color: var(--active_yellow);
 }
 
 .filter_button {
     color: black;
-    background-color: var(--basic-grey);
+    background-color: var(--basic_grey);
 }
 
 .filter_button:hover {
     color: black;
-    background-color: var(--hover-grey);
+    background-color: var(--hover_grey);
 }
 
 .filter_button:active {
     color: rgba(0, 0, 0, .30);
-    background-color: var(--active-grey);
+    background-color: var(--active_grey);
 }
