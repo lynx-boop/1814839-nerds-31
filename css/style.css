@@ -2,8 +2,10 @@
     --basic_grey: #EEEEEE;
     --hover_grey: #DFDFDF;
     --active_grey: #D5D5D5;
-    --dark_grey: #4D4D4D;
     --border_grey: #DBDBDB;
+    --form_base_grey: #D7DCDE;
+    --form_hover_grey: #B4B9BB;
+    --dark_grey: #4D4D4D;
     --basic_red: #FB565A;
     --hover_red: #e74246;
     --active_red: #D7373B;
@@ -229,10 +231,8 @@ a {
 
 .buttons_list a:not([href]) {
     color: black;
-    border: solid;
+    border: 3px solid var(--border_grey);
     background-color: white;
-    border-width: 3px;
-    border-color: var(--border_grey);
 }
 
 .footer_location {
@@ -241,4 +241,18 @@ a {
 
 .footer_phone {
     color: inherit;
+}
+
+.modal_write_us input, .modal_write_us textarea {
+    color: inherit;
+    background-color: transparent;
+    border: 2px solid var(--form_base_grey);
+}
+
+.modal_write_us input:hover, .modal_write_us textarea:hover {
+    border: 2px solid var(--form_hover_grey);
+}
+
+.modal_write_us input:focus, .modal_write_us textarea:focus {
+    border: 2px solid black;
 }
