@@ -1,0 +1,189 @@
+:root {
+    --basic-grey: #EEEEEE;
+    --hover-grey: #DFDFDF;
+    --active-grey: #D5D5D5;
+    --dark-grey: #4D4D4D;
+    --basic-red: #FB565A;
+    --hover_red: #e74246;
+    --active_red: #D7373B;
+    --basic-green: #00CA74;
+    --hover_green: #00BC6C;
+    --active_green: #00AA62;
+    --basic-yellow: #EFC849;
+    --hover-yellow: #EAB534;
+    --active-yellow: #E5A722;
+}
+
+body {
+    min-width: 950px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--basic-black);
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main_navigation {
+    font-size: 16px;
+    line-height: 30px;
+    color: black;
+    background-color: var(--basic-grey);
+    /*здесь будет серенький бэк на слайды тоже, когда я пойму, как его сделать*/
+}
+
+.list {
+    list-style: none;
+}
+
+.site_navigation a:not([href]) {
+    background-color: var(--basic-red);
+    /*потом изменю на тот фон, который будет нужен, если будет нужен*/
+}
+
+.site_navigation a {
+    color: black;
+}
+
+.site_navigation a:hover, .site_navigation a:focus {
+    background-color: var(--basic-grey);
+}
+
+.features_list {
+    background-color: var(--basic-grey);
+    text-align: left;
+    /*Я не знаю, как нужно выравнивать этот блок - это же слайды...*/
+}
+
+.feature_item {
+    text-align: left;
+    /*Я не знаю, как нужно выравнивать этот блок - это же слайды...*/
+}
+
+.feature_item h3 {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+}
+
+.slider_button {
+    background-color: var(--basic-grey);
+}
+
+.service_item h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about_us_list h3 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+.about_us_list h4 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about_us_list span {
+    font-size: 45px;
+    line-height: 64px;
+    font-weight: 700;
+}
+
+.about_us_list sup {
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.about_us_image {
+    background-color: var(--basic-grey);
+    /*это здесь на случай, если картинка не загрузится - лайв №4 55мин*/
+}
+
+.partners_list {
+    background-color: transparent;
+}
+
+.button {
+    font: inherit;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--basic-grey);
+    border: none;
+}
+
+/*туть будут свойства для кнопок слайдера .slider_button {}*/
+
+.red_button {
+    color: white;
+    background-color: var(--basic-red);
+}
+
+.red_button:hover {
+    background-color: var(--hover_red);
+}
+
+.red_button:active {
+    background-color: var(--active_red);
+}
+
+.green_button {
+    color: white;
+    background-color: var(--basic-green);
+}
+
+.green_button:hover {
+    color: white;
+    background-color: var(--hover-green);
+}
+
+.green_button:active {
+    color: white;
+    background-color: var(--active-green);
+}
+
+.yellow_button {
+    color: white;
+    background-color: var(--basic-yellow);
+}
+
+.yellow_button:hover {
+    color: white;
+    background-color: var(--hover-yellow);
+}
+
+.yellow_button:active {
+    color: white;
+    background-color: var(--active-yellow);
+}
+
+.filter_button {
+    color: black;
+    background-color: var(--basic-grey);
+}
+
+.filter_button:hover {
+    color: black;
+    background-color: var(--hover-grey);
+}
+
+.filter_button:active {
+    color: rgba(0, 0, 0, .30);
+    background-color: var(--active-grey);
+}
