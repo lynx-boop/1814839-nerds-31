@@ -130,8 +130,16 @@ a {
     /*это здесь на случай, если картинка не загрузится - лайв №4 55мин*/
 }
 
-.partners_list {
-    background-color: transparent;
+.partners_list_item {
+    opacity: 0.2;
+}
+
+.partners_list_item:hover {
+    opacity: 1;
+}
+
+.partners_list_item:active {
+    opacity: 0.1;
 }
 
 .button {
