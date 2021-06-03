@@ -16,7 +16,7 @@
 
 <body class="catalog_body">
 
-    <header class="main_header">
+    <header class="main_header inner_page">
         <nav class="main_navigation">
             <a class="main_header_logo" href="index.html">
                 <img src="img/nerds_logo.svg" width="160" height="66" alt="Логотип дизайн-студии Нердс" />
@@ -268,15 +268,17 @@
             <form class="modal_write_us" action="https://echo.htmlacademy.ru" method="post">
                 <p>
                     <label for="name">Ваше имя:</label>
-                    <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+                    <input class="modal_w_u_item" id="name" type="text" name="name" placeholder="Имя Фамилия">
                 </p>
                 <p>
                     <label for="login-login">Ваш email:</label>
-                    <input id="login-login" type="email" name="login" placeholder="email@example.com">
+                    <input class="modal_w_u_item" id="login-login" type="email" name="login"
+                        placeholder="email@example.com">
                 </p>
                 <p>
                     <label for="comment">Текст письма:</label>
-                    <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
+                    <textarea class="modal_w_u_item" name="comment" id="comment"
+                        placeholder="В свободной форме"></textarea>
                     <button type="submit" class="button red_button">Напишите нам</button>
                 </p>
             </form>

@@ -133,6 +133,10 @@ a {
     /*это здесь на случай, если картинка не загрузится - лайв №4 55мин*/
 }
 
+.partners {
+    text-align: center;
+}
+
 .partners_list_item {
     opacity: 0.2;
 }
@@ -235,12 +239,17 @@ a {
     background-color: white;
 }
 
-.footer_location {
+.main_footer {
     color: inherit;
+    font: inherit;
+    background-color: white;
 }
 
-.footer_phone {
-    color: inherit;
+.footer_location h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
 }
 
 .modal_write_us input, .modal_write_us textarea {
@@ -251,8 +260,35 @@ a {
 
 .modal_write_us input:hover, .modal_write_us textarea:hover {
     border: 2px solid var(--form_hover_grey);
+    color: var(--form_hover_grey);
+    ;
 }
 
 .modal_write_us input:focus, .modal_write_us textarea:focus {
     border: 2px solid black;
+    color: black;
+}
+
+.modal_write_us :invalid {
+    border: 2px solid var(--basic_red);
+    color: var(--basic_red);
+}
+
+.friendship {
+    color: inherit;
+    font: inherit;
+    background-color: white;
+    text-align: center;
+}
+
+.fri_one {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.fri_two {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
 }
