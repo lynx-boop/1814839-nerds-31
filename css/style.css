@@ -15,6 +15,7 @@
     --basic_yellow: #EFC849;
     --hover_yellow: #EAB534;
     --active_yellow: #E5A722;
+    --tap_button: rgba(255, 255, 255, .30);
 }
 
 body {
@@ -38,15 +39,15 @@ a {
     list-style: none;
 }
 
-.main_header_logo img:hover {
+.main-header-logo img:hover {
     opacity: 0.7;
 }
 
-.main_header_logo img:active {
+.main-header-logo img:active {
     opacity: 0.3;
 }
 
-.main_navigation {
+.main-navigation {
     font-size: 16px;
     line-height: 30px;
     color: black;
@@ -54,82 +55,82 @@ a {
     /*здесь будет серенький бэк на слайды тоже, когда я пойму, как его сделать*/
 }
 
-.site_navigation a:hover {
+.site-navigation a:hover {
     color: var(--basic_red);
 }
 
-.site_navigation a:active {
+.site-navigation a:active {
     color: rgba(0, 0, 0, .30);
 }
 
-.site_navigation a:not([href]) {
+.site-navigation a:not([href]) {
     background-color: var(--basic_red);
     /*потом изменю на тот фон, который будет нужен, если будет нужен*/
 }
 
-.site_navigation a {
+.site-navigation a {
     color: black;
 }
 
-.site_navigation a:hover, .site_navigation a:focus {
+.site-navigation a:hover, .site-navigation a:focus {
     background-color: var(--basic_grey);
 }
 
-.features_list {
+.features-list {
     background-color: var(--basic_grey);
     text-align: left;
     /*Я не знаю, как нужно выравнивать этот блок - это же слайды...*/
 }
 
-.feature_item {
+.feature-item {
     text-align: left;
     /*Я не знаю, как нужно выравнивать этот блок - это же слайды...*/
 }
 
-.feature_item h3 {
+.feature-item h3 {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
 }
 
-.slider_button {
+.slider-button {
     background-color: var(--basic_grey);
 }
 
-.service_item h3 {
+.service-item h3 {
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.about_us_list h3 {
+.about-us-list h3 {
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
 }
 
-.about_us_list h4 {
+.about-us-list h4 {
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.about_us_list span {
+.about-us-list span {
     font-size: 45px;
     line-height: 64px;
     font-weight: 700;
 }
 
-.about_us_list sup {
+.about-us-list sup {
     font-size: 26px;
     line-height: 40px;
     font-weight: 700;
 }
 
-.about_us_image {
-    background-color: var(--basic_grey);
+.about-us-image {
+    background-color: white;
     /*это здесь на случай, если картинка не загрузится - лайв №4 55мин*/
 }
 
@@ -137,15 +138,15 @@ a {
     text-align: center;
 }
 
-.partners_list_item {
+.partners-list-item {
     opacity: 0.2;
 }
 
-.partners_list_item:hover {
+.partners-list-item:hover {
     opacity: 1;
 }
 
-.partners_list_item:active {
+.partners-list-item:active {
     opacity: 0.1;
 }
 
@@ -155,121 +156,111 @@ a {
     color: white;
     vertical-align: middle;
     text-transform: uppercase;
-    background-color: var(--basic_grey);
+    background-color: var(--basic_red);
     border: none;
 }
 
-/*туть будут свойства для кнопок слайдера .slider_button {}*/
-
-.red_button {
-    color: white;
-    background-color: var(--basic_red);
+.button:active {
+    color: var(--tap_button);
 }
 
-.red_button:hover {
+.red-button:hover {
     background-color: var(--hover_red);
 }
 
-.red_button:active {
-    color: rgba(255, 255, 255, .30);
+.red-button:active {
     background-color: var(--active_red);
 }
 
-.green_button {
-    color: white;
+.green-button {
     background-color: var(--basic_green);
 }
 
-.green_button:hover {
-    color: white;
+.green-button:hover {
     background-color: var(--hover_green);
 }
 
-.green_button:active {
-    color: rgba(255, 255, 255, .30);
+.green-button:active {
     background-color: var(--active_green);
 }
 
-.yellow_button {
-    color: white;
+.yellow-button {
     background-color: var(--basic_yellow);
 }
 
-.yellow_button:hover {
-    color: white;
+.yellow-button:hover {
     background-color: var(--hover_yellow);
 }
 
-.yellow_button:active {
-    color: rgba(255, 255, 255, .30);
+.yellow-button:active {
     background-color: var(--active_yellow);
 }
 
-.filter_button {
+.filter-button {
     color: black;
 }
 
-.filter_button:hover {
-    color: black;
-    background-color: var(--hover_grey);
-}
-
-.filter_button:active {
-    color: rgba(0, 0, 0, .30);
-    background-color: var(--active_grey);
-}
-
-.page_button {
-    color: black;
-}
-
-.page_button:hover {
+.filter-button:hover {
     color: black;
     background-color: var(--hover_grey);
 }
 
-.page_button:active {
+.filter-button:active {
     color: rgba(0, 0, 0, .30);
     background-color: var(--active_grey);
 }
 
-.buttons_list a:not([href]) {
+.page-button {
+    color: black;
+}
+
+.page-button:hover {
+    color: black;
+    background-color: var(--hover_grey);
+}
+
+.page-button:active {
+    color: rgba(0, 0, 0, .30);
+    background-color: var(--active_grey);
+}
+
+.buttons-list a:not([href]) {
     color: black;
     border: 3px solid var(--border_grey);
     background-color: white;
 }
 
-.main_footer {
+.main-footer {
     color: inherit;
     font: inherit;
     background-color: white;
 }
 
-.footer_location h3 {
+.footer-location h3 {
     text-transform: uppercase;
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
 }
 
-.modal_write_us input, .modal_write_us textarea {
+.modal-write-us input, .modal-write-us textarea {
     color: inherit;
     background-color: transparent;
     border: 2px solid var(--form_base_grey);
 }
 
-.modal_write_us input:hover, .modal_write_us textarea:hover {
+.modal-write-us input:hover, .modal-write-us textarea:hover {
     border: 2px solid var(--form_hover_grey);
     color: var(--form_hover_grey);
     ;
 }
 
-.modal_write_us input:focus, .modal_write_us textarea:focus {
+.modal-write-us input:focus, .modal-write-us textarea:focus {
     border: 2px solid black;
     color: black;
 }
 
-.modal_write_us :invalid {
+.modal-write-us :invalid {
     border: 2px solid var(--basic_red);
     color: var(--basic_red);
 }
@@ -281,13 +272,13 @@ a {
     text-align: center;
 }
 
-.fri_one {
+.fri-one {
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
 }
 
-.fri_two {
+.fri-two {
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
