@@ -104,26 +104,26 @@ a {
     text-transform: uppercase;
 }
 
-.about-us-list h3 {
+.us {
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
 }
 
-.about-us-list h4 {
+.uppercase {
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.about-us-list span {
+.about-us-item span {
     font-size: 45px;
     line-height: 64px;
     font-weight: 700;
 }
 
-.about-us-list sup {
+.about-us-item sup {
     font-size: 26px;
     line-height: 40px;
     font-weight: 700;
