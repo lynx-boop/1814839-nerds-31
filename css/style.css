@@ -1,38 +1,41 @@
 :root {
-    --basic_grey: #EEEEEE;
-    --hover_grey: #DFDFDF;
-    --active_grey: #D5D5D5;
-    --border_grey: #DBDBDB;
-    --form_base_grey: #D7DCDE;
-    --form_hover_grey: #B4B9BB;
-    --dark_grey: #4D4D4D;
-    --basic_red: #FB565A;
-    --hover_red: #e74246;
-    --active_red: #D7373B;
-    --basic_green: #00CA74;
-    --hover_green: #00BC6C;
-    --active_green: #00AA62;
-    --basic_yellow: #EFC849;
-    --hover_yellow: #EAB534;
-    --active_yellow: #E5A722;
-    --tap_button: rgba(255, 255, 255, .30);
+    --grey-100: #D7DCDE;
+    --grey-200: #EEEEEE;
+    --grey-300: #DFDFDF;
+    --grey-310: #D5D5D5;
+    --grey-320: #DBDBDB;
+    --grey-400: #B4B9BB;
+    --grey-800: #4D4D4D;
+    --red-400: #FB565A;
+    --red-600: #e74246;
+    --red-700: #D7373B;
+    --green-400: #00CA74;
+    --green-450: #00BC6C;
+    --green-600: #00AA62;
+    --yellow-300: #EFC849;
+    --yellow-700: #EAB534;
+    --yellow-800: #E5A722;
+    --white-50: #FFFFFF;
+    --white-050: rgba(255, 255, 255, .30);
+    --black-900: #000000;
+    --black-050: rgba(0, 0, 0, .30);
 }
 
 body {
     min-width: 950px;
     margin: 0;
     padding: 0;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    color: var(--basic-black);
-    background-color: white;
+    color: var(--black-900);
+    background-color: var(--white-50);
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--black-900);
 }
 
 .list {
@@ -50,41 +53,28 @@ a {
 .main-navigation {
     font-size: 16px;
     line-height: 30px;
-    color: black;
-    background-color: var(--basic_grey);
-    /*здесь будет серенький бэк на слайды тоже, когда я пойму, как его сделать*/
+    color: var(--black-900);
+    background-color: var(--grey-200);
 }
 
 .site-navigation a:hover {
-    color: var(--basic_red);
+    color: var(--red-400);
 }
 
 .site-navigation a:active {
-    color: rgba(0, 0, 0, .30);
-}
-
-.site-navigation a:not([href]) {
-    background-color: var(--basic_red);
-    /*потом изменю на тот фон, который будет нужен, если будет нужен*/
+    color: var(--black-050);
 }
 
 .site-navigation a {
-    color: black;
+    color: var(--black-900);
 }
 
 .site-navigation a:hover, .site-navigation a:focus {
-    background-color: var(--basic_grey);
+    background-color: var(--grey-200);
 }
 
 .features-list {
-    background-color: var(--basic_grey);
-    text-align: left;
-    /*Я не знаю, как нужно выравнивать этот блок - это же слайды...*/
-}
-
-.feature-item {
-    text-align: left;
-    /*Я не знаю, как нужно выравнивать этот блок - это же слайды...*/
+    background-color: var(--grey-200);
 }
 
 .feature-item h3 {
@@ -94,7 +84,7 @@ a {
 }
 
 .slider-button {
-    background-color: var(--basic_grey);
+    background-color: var(--grey-200);
 }
 
 .service-item h3 {
@@ -130,7 +120,7 @@ a {
 }
 
 .about-us-image {
-    background-color: white;
+    background-color: var(--white-50);
     /*это здесь на случай, если картинка не загрузится - лайв №4 55мин*/
 }
 
@@ -153,87 +143,87 @@ a {
 .button {
     font: inherit;
     text-align: center;
-    color: white;
+    color: var(--white-50);
     vertical-align: middle;
     text-transform: uppercase;
-    background-color: var(--basic_red);
+    background-color: var(--red-400);
     border: none;
 }
 
 .button:active {
-    color: var(--tap_button);
+    color: var(--white-050);
 }
 
 .red-button:hover {
-    background-color: var(--hover_red);
+    background-color: var(--red-600);
 }
 
 .red-button:active {
-    background-color: var(--active_red);
+    background-color: var(--red-700);
 }
 
 .green-button {
-    background-color: var(--basic_green);
+    background-color: var(--green-400);
 }
 
 .green-button:hover {
-    background-color: var(--hover_green);
+    background-color: var(--green-450);
 }
 
 .green-button:active {
-    background-color: var(--active_green);
+    background-color: var(--green-600);
 }
 
 .yellow-button {
-    background-color: var(--basic_yellow);
+    background-color: var(--yellow-300);
 }
 
 .yellow-button:hover {
-    background-color: var(--hover_yellow);
+    background-color: var(--yellow-700);
 }
 
 .yellow-button:active {
-    background-color: var(--active_yellow);
+    background-color: var(--yellow-800);
 }
 
 .filter-button {
-    color: black;
+    color: var(--black-900);
 }
 
 .filter-button:hover {
-    color: black;
-    background-color: var(--hover_grey);
+    color: var(--black-900);
+    background-color: var(--grey-300);
 }
 
 .filter-button:active {
-    color: rgba(0, 0, 0, .30);
-    background-color: var(--active_grey);
+    color: var(--black-050);
+    background-color: var(--grey-310);
 }
 
 .page-button {
-    color: black;
+    color: var(--black-900);
 }
 
 .page-button:hover {
-    color: black;
-    background-color: var(--hover_grey);
+    color: var(--black-900);
+    background-color: var(--grey-300);
 }
 
 .page-button:active {
-    color: rgba(0, 0, 0, .30);
-    background-color: var(--active_grey);
+    color: var(--black-050);
+    background-color: var(--grey-320);
 }
 
 .buttons-list a:not([href]) {
-    color: black;
-    border: 3px solid var(--border_grey);
-    background-color: white;
+    color: var(--black-900);
+    border: 3px solid var(--grey-320);
+    background-color: var(--white-50);
 }
 
 .main-footer {
     color: inherit;
     font: inherit;
-    background-color: white;
+    background-color: var(--white-50);
 }
 
 .footer-location h3 {
@@ -243,42 +233,48 @@ a {
     font-weight: 700;
 }
 
+.modal-title {
+    font-size: 45px;
+    line-height: 53px;
+    font-weight: 700;
+}
+
 .modal-write-us input, .modal-write-us textarea {
     color: inherit;
     background-color: transparent;
-    border: 2px solid var(--form_base_grey);
+    border: 2px solid var(--grey-100);
 }
 
 .modal-write-us input:hover, .modal-write-us textarea:hover {
-    border: 2px solid var(--form_hover_grey);
-    color: var(--form_hover_grey);
+    border: 2px solid var(--grey-400);
+    color: var(--grey-400);
     ;
 }
 
 .modal-write-us input:focus, .modal-write-us textarea:focus {
-    border: 2px solid black;
-    color: black;
+    border: 2px solid var(--black-900);
+    color: var(--black-900);
 }
 
 .modal-write-us :invalid {
-    border: 2px solid var(--basic_red);
-    color: var(--basic_red);
+    border: 2px solid var(--red-400);
+    color: var(--red-400);
 }
 
 .friendship {
     color: inherit;
     font: inherit;
-    background-color: white;
+    background-color: var(--white-50);
     text-align: center;
 }
 
-.fri-one {
+.advantage {
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
 }
 
-.fri-two {
+.social {
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;

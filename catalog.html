@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Нёрдс</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -14,9 +16,9 @@
     <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body class="catalog_body">
+<body>
 
-    <header class="main_header inner_page">
+    <header class="main_header">
         <nav class="main_navigation">
             <a class="main_header_logo" href="index.html">
                 <img src="img/nerds_logo.svg" width="160" height="66" alt="Логотип дизайн-студии Нердс" />
@@ -207,13 +209,13 @@
 
             <ul class="buttons_list list">
                 <li>
-                    <a class="button page_button page_button_1">1</a>
+                    <a class="button page_button">1</a>
                 </li>
                 <li>
-                    <a class="button page_button page_button_2" href="#">2</a>
+                    <a class="button page_button" href="#">2</a>
                 </li>
                 <li>
-                    <a class="button page_button page_button_3" href="#">3</a>
+                    <a class="button page_button" href="#">3</a>
                 </li>
                 <li>
                     <a class="button page_button page_button_next" href="#">Следующая</a>
@@ -277,8 +279,7 @@
                 </p>
                 <p>
                     <label for="comment">Текст письма:</label>
-                    <textarea class="modal_w_u_item" name="comment" id="comment"
-                        placeholder="В свободной форме"></textarea>
+                    <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
                     <button type="submit" class="button red_button">Напишите нам</button>
                 </p>
             </form>
