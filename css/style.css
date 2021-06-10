@@ -15,10 +15,10 @@
     --yellow-300: #EFC849;
     --yellow-700: #EAB534;
     --yellow-800: #E5A722;
-    --white-50: #FFFFFF;
-    --white-050: rgba(255, 255, 255, .30);
-    --black-900: #000000;
-    --black-050: rgba(0, 0, 0, .30);
+    --white: #FFFFFF;
+    --white-transparent: rgba(255, 255, 255, .30);
+    --black: #000000;
+    --black-transparent: rgba(0, 0, 0, .30);
 }
 
 body {
@@ -29,16 +29,16 @@ body {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    color: var(--black-900);
-    background-color: var(--white-50);
+    color: var(--black);
+    background-color: var(--white);
 }
 
 a {
     text-decoration: none;
-    color: var(--black-900);
+    color: var(--black);
 }
 
-.list {
+.list-style-none {
     list-style: none;
 }
 
@@ -53,7 +53,7 @@ a {
 .main-navigation {
     font-size: 16px;
     line-height: 30px;
-    color: var(--black-900);
+    color: var(--black);
     background-color: var(--grey-200);
 }
 
@@ -62,11 +62,11 @@ a {
 }
 
 .site-navigation a:active {
-    color: var(--black-050);
+    color: var(--black-transparent);
 }
 
 .site-navigation a {
-    color: var(--black-900);
+    color: var(--black);
 }
 
 .site-navigation a:hover, .site-navigation a:focus {
@@ -120,7 +120,7 @@ a {
 }
 
 .about-us-image {
-    background-color: var(--white-50);
+    background-color: var(--white0);
     /*это здесь на случай, если картинка не загрузится - лайв №4 55мин*/
 }
 
@@ -143,7 +143,7 @@ a {
 .button {
     font: inherit;
     text-align: center;
-    color: var(--white-50);
+    color: var(--white);
     vertical-align: middle;
     text-transform: uppercase;
     background-color: var(--red-400);
@@ -151,14 +151,14 @@ a {
 }
 
 .button:active {
-    color: var(--white-050);
+    color: var(--white-transparent);
 }
 
-.red-button:hover {
+.button:hover {
     background-color: var(--red-600);
 }
 
-.red-button:active {
+.button:active {
     background-color: var(--red-700);
 }
 
@@ -186,44 +186,44 @@ a {
     background-color: var(--yellow-800);
 }
 
-.filter-button {
-    color: var(--black-900);
+.grey-button {
+    color: var(--black);
 }
 
-.filter-button:hover {
-    color: var(--black-900);
+.grey-button:hover {
+    color: var(--black);
     background-color: var(--grey-300);
 }
 
-.filter-button:active {
-    color: var(--black-050);
+.grey-button:active {
+    color: var(--black-transparent);
     background-color: var(--grey-310);
 }
 
 .page-button {
-    color: var(--black-900);
+    color: var(--black);
 }
 
 .page-button:hover {
-    color: var(--black-900);
+    color: var(--black;
     background-color: var(--grey-300);
 }
 
 .page-button:active {
-    color: var(--black-050);
+    color: var(--black-transparent);
     background-color: var(--grey-320);
 }
 
 .buttons-list a:not([href]) {
-    color: var(--black-900);
+    color: var(--black);
     border: 3px solid var(--grey-320);
-    background-color: var(--white-50);
+    background-color: var(--white);
 }
 
 .main-footer {
     color: inherit;
     font: inherit;
-    background-color: var(--white-50);
+    background-color: var(--white);
 }
 
 .footer-location h3 {
@@ -252,8 +252,8 @@ a {
 }
 
 .modal-write-us input:focus, .modal-write-us textarea:focus {
-    border: 2px solid var(--black-900);
-    color: var(--black-900);
+    border: 2px solid var(--black);
+    color: var(--black);
 }
 
 .modal-write-us :invalid {
@@ -264,17 +264,17 @@ a {
 .friendship {
     color: inherit;
     font: inherit;
-    background-color: var(--white-50);
+    background-color: var(--white);
     text-align: center;
 }
 
-.advantage {
+.footer-title {
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
 }
 
-.social {
+.footer-text {
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
