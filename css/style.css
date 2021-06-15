@@ -6,6 +6,7 @@
     --grey-320: #DBDBDB;
     --grey-400: #B4B9BB;
     --grey-800: #4D4D4D;
+    --grey-900: #283136;
     --red-400: #FB565A;
     --red-600: #e74246;
     --red-700: #D7373B;
@@ -16,9 +17,10 @@
     --yellow-700: #EAB534;
     --yellow-800: #E5A722;
     --white: #FFFFFF;
-    --white-transparent: rgba(255, 255, 255, .30);
+    --white-transparent-30: rgba(255, 255, 255, .30);
     --black: #000000;
-    --black-transparent: rgba(0, 0, 0, .30);
+    --black-transparent-30: rgba(0, 0, 0, .30);
+    --black-transparent-60: rgba(0, 0, 0, .60);
 }
 
 body {
@@ -64,7 +66,7 @@ a {
 }
 
 .site-navigation a:active {
-    color: var(--black-transparent);
+    color: var(--black-transparent-30);
 }
 
 .site-navigation a {
@@ -156,7 +158,7 @@ a {
 }
 
 .button:active {
-    color: var(--white-transparent);
+    color: var(--white-transparent-30);
 }
 
 .button:hover {
@@ -201,7 +203,7 @@ a {
 }
 
 .grey-button:active {
-    color: var(--black-transparent);
+    color: var(--black-transparent-30);
     background-color: var(--grey-310);
 }
 
@@ -215,29 +217,45 @@ a {
 }
 
 .page-button:active {
-    color: var(--black-transparent);
+    color: var(--black-transparent-30);
     background-color: var(--grey-320);
 }
 
-.filter-button {
+.filter-button, .page-button {
     background-color: var(--grey-200);
     color: var(--black);
 }
 
-.filter-button:hover {
+.filter-button:hover, .page-button:hover {
     background-color: var(--grey-300);
     color: var(--black);
 }
 
-.filter-button:active {
+.filter-button:active, .page-button:active {
     background-color: var(--grey-310);
-    color: var(--black-transparent);
+    color: var(--black-transparent-30);
+}
+
+.buy-button:active {
+    color: var(--white);
 }
 
 .buttons-list a:not([href]) {
     color: var(--black);
     border: 3px solid var(--grey-320);
     background-color: var(--white);
+}
+
+.sort a {
+    color: var(--black-transparent-30);
+}
+
+.sort a:hover {
+    color: var(--black-transparent-60);
+}
+
+.sort a:active {
+    color: var(--black);
 }
 
 .main-footer {
@@ -312,6 +330,11 @@ a {
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
+    color: var(--grey-900);
+}
+
+.filter-parameters:active {
+    opacity: 0.3;
 }
 
 .mini-title, .templates h3 {
@@ -319,6 +342,14 @@ a {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
+}
+
+.templates h3:hover {
+    color: var(--red-400);
+}
+
+.templates h3:active {
+    color: var(--black-transparent-30);
 }
 
 .templates p {
