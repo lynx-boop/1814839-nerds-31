@@ -55,6 +55,8 @@ a {
     line-height: 30px;
     color: var(--black);
     background-color: var(--grey-200);
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .site-navigation a:hover {
@@ -148,6 +150,9 @@ a {
     text-transform: uppercase;
     background-color: var(--red-400);
     border: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
 }
 
 .button:active {
@@ -205,13 +210,28 @@ a {
 }
 
 .page-button:hover {
-    color: var(--black;
+    color: var(--black);
     background-color: var(--grey-300);
 }
 
 .page-button:active {
     color: var(--black-transparent);
     background-color: var(--grey-320);
+}
+
+.filter-button {
+    background-color: var(--grey-200);
+    color: var(--black);
+}
+
+.filter-button:hover {
+    background-color: var(--grey-300);
+    color: var(--black);
+}
+
+.filter-button:active {
+    background-color: var(--grey-310);
+    color: var(--black-transparent);
 }
 
 .buttons-list a:not([href]) {
@@ -277,5 +297,32 @@ a {
 .footer-text {
     font-size: 16px;
     line-height: 22px;
+    font-weight: 400;
+}
+
+.page-title {
+    width: 55px;
+    height: 55px;
+    font-weight: 500;
+    display: inline;
+    background-color: var(--grey-200);
+}
+
+.filter-parameters {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.mini-title, .templates h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.templates p {
+    font-size: 16px;
+    line-height: 18px;
     font-weight: 400;
 }
