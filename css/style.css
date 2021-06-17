@@ -246,15 +246,15 @@ a {
     background-color: var(--white);
 }
 
-.sort a {
+.sort-item a {
     color: var(--black-transparent-30);
 }
 
-.sort a:hover {
+.sort-item a:hover {
     color: var(--black-transparent-60);
 }
 
-.sort a:active {
+.sort-item a:active {
     color: var(--black);
 }
 
@@ -322,7 +322,7 @@ a {
     width: 55px;
     height: 55px;
     font-weight: 500;
-    display: inline;
+    text-align: center;
     background-color: var(--grey-200);
 }
 
@@ -333,7 +333,7 @@ a {
     color: var(--grey-900);
 }
 
-.filter-parameters:active {
+.filter-parameter-item:active {
     opacity: 0.3;
 }
 
@@ -344,11 +344,11 @@ a {
     font-weight: 700;
 }
 
-.templates h3:hover {
+.templates a:hover {
     color: var(--red-400);
 }
 
-.templates h3:active {
+.templates a:active {
     color: var(--black-transparent-30);
 }
 
