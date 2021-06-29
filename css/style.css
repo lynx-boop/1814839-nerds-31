@@ -23,7 +23,7 @@
     --black-transparent-60: rgba(0, 0, 0, .60);
 }
 
-body {
+.page-body {
     min-width: 950px;
     margin: 0;
     padding: 0;
@@ -33,6 +33,12 @@ body {
     font-weight: 400;
     color: var(--black);
     background-color: var(--white);
+    min-height: 100%;
+    display: grid;
+    align-content: start;
+    grid-template-rows: min-content 1fr min-content;
+    outline: 5px solid rgba(255, 30, 0, 0.3);
+    outline-offset: -5px;
 }
 
 a {
@@ -40,12 +46,20 @@ a {
     color: var(--black);
 }
 
+.page {
+    height: 100%;
+}
+
 .list-style-none {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .main-header-logo img:hover {
     opacity: 0.7;
+    order: 1;
+    justify-self: left;
 }
 
 .main-header-logo img:active {
@@ -59,6 +73,28 @@ a {
     background-color: var(--grey-200);
     text-transform: uppercase;
     font-weight: 500;
+    outline: 5px solid rgba(0, 81, 255, 0.3);
+    outline-offset: -5px;
+}
+
+.center {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-navigation-wrapper {
+    display: grid;
+    justify-content: stretch;
+    grid-template-columns: min-content 1fr min-content;
+    margin: 50px auto;
+    padding-left: 10px;
+    outline: 5px solid rgba(145, 255, 0, 0.3);
+    outline-offset: -5px;
+}
+
+.main-background {
+    background-color: var(--grey-200);
 }
 
 .site-navigation a:hover {
@@ -79,6 +115,10 @@ a {
 
 .features-list {
     background-color: var(--grey-200);
+    margin-bottom: 80px;
+    display: grid;
+    outline: 5px solid rgba(0, 255, 255, 0.3);
+    outline-offset: -5px;
 }
 
 .feature-item h3 {
@@ -91,6 +131,25 @@ a {
     background-color: var(--grey-200);
 }
 
+.services {
+    margin-bottom: 80px;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: flex-start;
+    column-gap: 100px;
+    outline: 5px solid rgba(250, 8, 109, 0.3);
+    outline-offset: -5px;
+}
+
+.service-item {
+    outline: 5px solid rgba(8, 73, 250, 0.3);
+    outline-offset: -5px;
+    margin: 0 10px;
+}
+
 .service-item h3 {
     font-size: 24px;
     line-height: 30px;
@@ -98,10 +157,32 @@ a {
     text-transform: uppercase;
 }
 
+.about-us {
+    outline: 5px solid rgba(250, 8, 68, 0.3);
+    outline-offset: -5px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 100px;
+    margin-bottom: 75px;
+}
+
 .us {
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
+}
+
+.studio {
+    outline: 5px solid rgba(8, 250, 28, 0.3);
+    outline-offset: -5px;
+    margin: 0 10px;
+}
+
+.metrics {
+    outline: 5px solid rgba(7, 155, 93, 0.3);
+    outline-offset: -5px;
+    margin: 0 10px;
+    justify-self: end;
 }
 
 .uppercase {
@@ -129,7 +210,17 @@ a {
 }
 
 .partners {
-    text-align: center;
+    outline: 5px solid rgba(7, 138, 155, 0.3);
+    outline-offset: -5px;
+}
+
+.partners-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 182px;
+    column-gap: 120px;
+    margin: 0 10px 82px 10px;
+    align-items: center;
 }
 
 .partners-list-item {
@@ -262,6 +353,21 @@ a {
     color: inherit;
     font: inherit;
     background-color: var(--white);
+    outline: 5px solid rgba(255, 251, 0, 0.3);
+    outline-offset: -5px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footer-location {
+    height: 310px;
+    width: 320px;
+    outline: 5px solid rgba(136, 5, 5, 0.3);
+    outline-offset: -5px;
+    background-color: var(--white);
+    z-index: 2;
+    padding: 50px;
+    box-sizing: border-box;
 }
 
 .footer-location h3 {
@@ -269,6 +375,13 @@ a {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
+}
+
+.footer-contacts {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 68px;
+    margin-bottom: 68px;
 }
 
 .modal-title {
@@ -299,11 +412,27 @@ a {
     color: var(--red-400);
 }
 
+.social {
+    outline: 5px solid rgba(75, 4, 71, 0.3);
+    outline-offset: -5px;
+    display: grid;
+    justify-self: start;
+    padding: 0 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 80px;
+    column-gap: 10px;
+    align-items: center;
+}
+
 .friendship {
     color: inherit;
     font: inherit;
     background-color: var(--white);
     text-align: center;
+    outline: 5px solid rgba(75, 4, 45, 0.3);
+    outline-offset: -5px;
+    justify-self: center;
+    padding: 0 10px;
 }
 
 .footer-title {
@@ -356,4 +485,10 @@ a {
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
+}
+
+.map {
+    width: 1440px;
+    height: 416px;
+    z-index: 1;
 }
