@@ -92,7 +92,6 @@ a {
     grid-template-columns: min-content 1fr min-content;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding-left: 10px;
     outline: 5px solid rgba(145, 255, 0, 0.3);
     outline-offset: -5px;
 }
