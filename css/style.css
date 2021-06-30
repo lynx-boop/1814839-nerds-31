@@ -492,7 +492,6 @@ a {
 }
 
 .map {
-    width: 1440px;
-    height: 416px;
+    width: 100%;
     z-index: 1;
 }
