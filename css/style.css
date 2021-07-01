@@ -96,10 +96,6 @@ a {
     outline-offset: -5px;
 }
 
-.main-background {
-    background-color: var(--grey-200);
-}
-
 .site-navigation a:hover {
     color: var(--red-400);
 }
@@ -113,6 +109,10 @@ a {
 }
 
 .site-navigation a:hover, .site-navigation a:focus {
+    background-color: var(--grey-200);
+}
+
+.features {
     background-color: var(--grey-200);
 }
 
