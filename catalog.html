@@ -229,65 +229,74 @@
     </main>
 
     <footer class="main-footer">
-
         <section class="footer-location">
             <h2 hidden>Как нас найти</h2>
-            <h3>NЁRDS Design Studio</h3>
-            <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+
+            <div class="contacts-wrapper container">
+                <img class="contacts-map" src="img/map.png" width="1440" height="416" alt="Карта">
+                <!--<img (здесь будет маркер) width="231" height="190" alt="Маркер на карте">-->
+
+                <div class="contacts-adress">
+                    <h3>NЁRDS Design Studio</h3>
+                    <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+                    <p>
+                        <a class="footer-phone" href="tel: +7 800 555-86-28">+7 800 555-86-28</a>
+                    </p>
+                    <p>
+                        <a class="button red-button" href="#">Напишите нам</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="footer-contacts list-style-none">
+                <h2 hidden>Как с нами связаться</h2>
+
+                <ul class="list-style-none social">
+                    <li>
+                        <a class="social-button button" href="#">
+                            <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-button button" href="#">
+                            <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-button button" href="#">
+                            <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="friendship">
+                    <p class="footer-title">Давайте дружить, это выгодно!</p>
+                    <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- <section class="modal">
+          <h2 class="modal-title">Напишите нам</h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
             <p>
-                <a class="footer-phone" href="tel: +7 800 555-86-28">+7 800 555-86-28</a>
+              <label for="name">Ваше имя:</label>
+              <input id="name" type="text" name="name" placeholder="Имя Фамилия">
             </p>
             <p>
-                <a class="button red-button" href="#">Напишите нам</a>
+              <label for="login-login">Ваш email:</label>
+              <input id="login-login" type="email" name="login" placeholder="email@example.com">
             </p>
-            <p><img src="img/map.png" width="1440" height="416" alt="Карта"></p>
-            <!--<img (здесь будет маркер) width="231" height="190" alt="Маркер на карте">-->
-        </section>
-
-        <section class="footer-contacts list-style-none">
-            <h2 hidden>Как с нами связаться</h2>
-
-            <ul class="list-style-none">
-                <li>
-                    <a class="social-button button" href="#">
-                        <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
-                    </a>
-                </li>
-                <li>
-                    <a class="social-button button" href="#">
-                        <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
-                    </a>
-                </li>
-                <li>
-                    <a class="social-button button" href="#">
-                        <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
-                    </a>
-                </li>
-            </ul>
-
-            <p class="footer-title">Давайте дружить, это выгодно!</p>
-            <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
-        </section>
-
-        <section class="modal">
-            <h2 class="modal-title">Напишите нам</h2>
-            <form action="https://echo.htmlacademy.ru" method="post">
-                <p>
-                    <label for="name">Ваше имя:</label>
-                    <input id="name" type="text" name="name" placeholder="Имя Фамилия">
-                </p>
-                <p>
-                    <label for="login-login">Ваш email:</label>
-                    <input id="login-login" type="email" name="login" placeholder="email@example.com">
-                </p>
-                <p>
-                    <label for="comment">Текст письма:</label>
-                    <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
-                    <button type="submit" class="button red-button">Напишите нам</button>
-                </p>
-            </form>
-            <button class="modal-close" type="button">Закрыть</button>
-        </section>
+            <p>
+              <label for="comment">Текст письма:</label>
+              <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
+              <button type="submit" class="button red-button">Напишите нам</button>
+            </p>
+          </form>
+          <button class="modal-close" type="button">Закрыть</button>
+        </section> -->
 
     </footer>
 
