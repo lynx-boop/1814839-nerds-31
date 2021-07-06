@@ -374,7 +374,6 @@ a {
 .service-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
     align-content: flex-start;
     column-gap: 100px;
     outline: 5px solid rgba(250, 8, 109, 0.3);
@@ -409,7 +408,6 @@ a {
 
 .about-us-list {
     display: flex;
-    justify-content: space-between;
 }
 
 .us {
