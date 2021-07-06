@@ -465,7 +465,7 @@ a {
 
 /* CATALOG */
 
-.main-catalog .page-title {
+.main .page-title {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
@@ -480,7 +480,8 @@ a {
 
 .main-catalog {
     display: grid;
-    grid-template-columns: 260px 1fr;
+    grid-template-columns: 260px 760px;
+    column-gap: 140px;
     outline: 5px solid rgba(0, 255, 255, 0.3);
     outline-offset: -5px;
 }
@@ -503,7 +504,6 @@ a {
 
 .sort {
     display: inline-block;
-    margin-left: 140px;
 }
 
 .sort-item a {
@@ -526,7 +526,6 @@ a {
 }
 
 .templates {
-    margin-left: 140px;
     display: grid;
 }
 
