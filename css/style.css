@@ -174,7 +174,6 @@ a {
 }
 
 .modal-write-us input, .modal-write-us textarea {
-    color: inherit;
     background-color: transparent;
     border: 2px solid var(--grey-100);
 }
