@@ -114,8 +114,6 @@ a {
 }
 
 .main-footer {
-    color: inherit;
-    font: inherit;
     background-color: var(--white);
     outline: 5px solid rgba(255, 251, 0, 0.3);
     outline-offset: -5px;
