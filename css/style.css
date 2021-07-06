@@ -102,7 +102,6 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-grow: 1;
     align-items: center;
     justify-content: center;
 }
@@ -524,6 +523,15 @@ a {
 
 .sort {
     display: flex;
+    width: 760px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sort-item {
+    justify-self: flex-end;
 }
 
 .sort-item a {
@@ -576,6 +584,19 @@ a {
     grid-auto-rows: min-content;
     column-gap: 40px;
     row-gap: 35px;
+}
+
+.buttons-list {
+    display: flex;
+    width: 760px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.buttons-list .button {
+    margin-right: 10px;
 }
 
 /* /CATALOG */
