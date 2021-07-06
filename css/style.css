@@ -86,7 +86,6 @@ a {
     padding-top: 50px;
     padding-bottom: 50px;
     display: grid;
-    justify-content: space-between;
     align-items: center;
     grid-template-columns: min-content 1fr min-content;
     outline: 5px solid rgba(145, 255, 0, 0.3);
@@ -102,7 +101,6 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-grow: 1;
     align-items: center;
     justify-content: center;
 }
