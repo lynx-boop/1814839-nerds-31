@@ -475,7 +475,7 @@ a {
 
 .main-catalog {
     display: grid;
-    grid-template-columns: 260px 760px;
+    grid-template-columns: 260px 1fr;
     column-gap: 140px;
     outline: 5px solid rgba(0, 255, 255, 0.3);
     outline-offset: -5px;
