@@ -378,12 +378,12 @@ a {
     column-gap: 100px;
     outline: 5px solid rgba(250, 8, 109, 0.3);
     outline-offset: -5px;
+    padding-right: 60px;
 }
 
 .service-item {
     outline: 5px solid rgba(8, 73, 250, 0.3);
     outline-offset: -5px;
-    max-width: 300px;
 }
 
 .service-item h3 {
