@@ -405,6 +405,15 @@ a {
     margin-bottom: 75px;
 }
 
+.metrics {
+    align-self: flex-end;
+}
+
+.about-us-list {
+    display: flex;
+    justify-content: space-between;
+}
+
 .us {
     font-size: 45px;
     line-height: 45px;
