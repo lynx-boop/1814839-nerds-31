@@ -422,6 +422,13 @@ a {
     background-color: var(--white0);
 }
 
+.mini-title-index {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 .partners {
     outline: 5px solid rgba(7, 138, 155, 0.3);
     outline-offset: -5px;
@@ -491,7 +498,7 @@ a {
 }
 
 .sort {
-    display: inline-block;
+    display: flex;
 }
 
 .sort-item a {
@@ -518,13 +525,6 @@ a {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
-}
-
-.mini-title-index {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
 }
 
 .templates {
