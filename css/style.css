@@ -230,7 +230,7 @@ a {
     text-align: left;
     outline: 5px solid rgba(75, 4, 45, 0.3);
     outline-offset: -5px;
-    justify-self: center;
+    justify-self: flex-start;
     align-self: center;
     padding: 0px;
     margin: 0px;
