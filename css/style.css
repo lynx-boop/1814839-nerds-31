@@ -8,8 +8,11 @@
     --grey-320: #DBDBDB;
     --grey-330: #E1E1E1;
     --grey-400: #B4B9BB;
+    --grey-500: #A6A6A6;
+    --grey-500-transparent-20: rgba(166, 166, 166, .20);
     --grey-800: #4D4D4D;
     --grey-900: #283136;
+    --grey-950: #231F20;
     --red-400: #FB565A;
     --red-600: #e74246;
     --red-700: #D7373B;
@@ -546,8 +549,28 @@ a {
     display: flex;
 }
 
-.sort-item a {
-    color: var(--black-transparent-30);
+.sort p:nth-child(5), .sort p:last-child {
+    background-color: var(--grey-500-transparent-20);
+    color: var(--grey-500-transparent-20);
+    border: 0;
+    width: 11px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.sort-button-up, .sort-button-down {
+    background-color: var(--grey-500-transparent-20);
+    color: transparent;
+}
+
+.sort-button-up:hover, .sort-button-down:hover {
+    background-color: var(--grey-500);
+    color: transparent;
+}
+
+.sort-button-up:active, .sort-button-down:active {
+    background-color: var(--grey-950);
+    color: transparent;
 }
 
 .sort-item a:hover {
