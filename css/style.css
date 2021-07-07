@@ -363,8 +363,17 @@ a {
     font-weight: 500;
 }
 
-.slider-button {
-    background-color: var(--grey-200);
+.slider-buttons {
+    text-align: center;
+}
+
+.slider .slider-button {
+    background-color: var(--white);
+    color: var(--white);
+    border: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
 }
 
 .services {
