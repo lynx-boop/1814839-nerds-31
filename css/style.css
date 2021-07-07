@@ -6,6 +6,7 @@
     --grey-300: #DFDFDF;
     --grey-310: #D5D5D5;
     --grey-320: #DBDBDB;
+    --grey-330: #E1E1E1;
     --grey-400: #B4B9BB;
     --grey-800: #4D4D4D;
     --grey-900: #283136;
@@ -150,8 +151,6 @@ a {
 .footer-contacts {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin-top: 68px;
-    margin-bottom: 68px;
 }
 
 .contacts-wrapper {
@@ -220,11 +219,12 @@ a {
 
 .friendship {
     background-color: var(--white);
-    text-align: center;
+    text-align: left;
     outline: 5px solid rgba(75, 4, 45, 0.3);
     outline-offset: -5px;
     justify-self: center;
-    padding: 0 10px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .footer-title {
@@ -341,6 +341,18 @@ a {
     background-color: var(--white);
 }
 
+.social {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+.social-button {
+    border-radius: 50%;
+    background-color: var(--grey-330);
+}
+
 /* /COMMON */
 
 /* INDEX */
@@ -374,6 +386,7 @@ a {
     width: 18px;
     height: 18px;
     border-radius: 50%;
+    overflow: hidden;
 }
 
 .services {
