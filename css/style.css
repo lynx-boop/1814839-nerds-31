@@ -137,7 +137,6 @@ a {
     z-index: 0;
     position: relative;
     overflow: hidden;
-    margin-bottom: 75px;
     min-height: 416px;
 }
 
@@ -151,6 +150,12 @@ a {
 .footer-contacts {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    height: 217px;
+}
+
+.social-button {
+    border-radius: 50%;
+    background-color: var(--grey-330);
 }
 
 .contacts-wrapper {
@@ -208,11 +213,9 @@ a {
 .social {
     outline: 5px solid rgba(75, 4, 71, 0.3);
     outline-offset: -5px;
-    display: grid;
+    display: flex;
     justify-self: start;
-    padding: 0 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 80px;
+    align-self: center;
     column-gap: 10px;
     align-items: center;
 }
@@ -223,6 +226,7 @@ a {
     outline: 5px solid rgba(75, 4, 45, 0.3);
     outline-offset: -5px;
     justify-self: center;
+    align-self: center;
     padding: 0px;
     margin: 0px;
 }
@@ -339,18 +343,6 @@ a {
     color: var(--black);
     border: 3px solid var(--grey-320);
     background-color: var(--white);
-}
-
-.social {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    width: 400px;
-}
-
-.social-button {
-    border-radius: 50%;
-    background-color: var(--grey-330);
 }
 
 /* /COMMON */
