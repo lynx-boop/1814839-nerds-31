@@ -153,11 +153,6 @@ a {
     height: 217px;
 }
 
-.social-button {
-    border-radius: 50%;
-    background-color: var(--grey-330);
-}
-
 .contacts-wrapper {
     padding-top: 54px;
     padding-bottom: 54px;
@@ -220,6 +215,16 @@ a {
     align-items: center;
 }
 
+.social li {
+    display: flex;
+    border-radius: 50%;
+    background-color: var(--grey-330);
+    height: 81px;
+    width: 81px;
+    align-items: center;
+    justify-content: center;
+}
+
 .friendship {
     background-color: var(--white);
     text-align: left;
@@ -235,6 +240,7 @@ a {
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
+    height: 81px;
 }
 
 .footer-text {
@@ -343,6 +349,10 @@ a {
     color: var(--black);
     border: 3px solid var(--grey-320);
     background-color: var(--white);
+}
+
+.social-button {
+    background-color: var(--grey-330);
 }
 
 /* /COMMON */
