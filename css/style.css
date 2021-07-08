@@ -422,7 +422,7 @@ a {
 }
 
 .services {
-    margin-bottom: 80px;
+    margin-bottom: 82px;
 }
 
 .service-list {
@@ -468,17 +468,35 @@ a {
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
+    padding: 0;
+    margin-bottom: 32px;
+}
+
+.mini-title-index {
+    margin-top: 40px;
+    padding: 0;
 }
 
 .studio {
     outline: 5px solid rgba(8, 250, 28, 0.3);
     outline-offset: -5px;
+    padding-top: 73px;
 }
 
 .metrics {
     outline: 5px solid rgba(7, 155, 93, 0.3);
     outline-offset: -5px;
     justify-self: end;
+}
+
+.orders-list {
+    padding: 0;
+    margin: 0;
+    margin-left: 35px;
+}
+
+.about-us-item {
+    margin-top: 30px;
 }
 
 .about-us-item span {
@@ -502,6 +520,10 @@ a {
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.metrics .mini-title-index {
+    text-align: center;
 }
 
 .partners {
