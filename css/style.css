@@ -385,8 +385,12 @@ a {
 /* не работает, и я не знаю как сделать, чтобы при наведении на первую кнопку
 показывался первый слайд, на вторую - второй и т.д. */
 
-.slider-buttons .slider-button:first-child:active .features-list li:first-child {
+/* .slider-buttons .slider-button:first-child:active .features-list li:first-child {
     display: block;
+} */
+
+.slider-button:active .feature-item {
+    display: flex;
 }
 
 .feature-item h3 {
