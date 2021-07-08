@@ -373,32 +373,43 @@ a {
 /* INDEX */
 
 .features {
+    display: grid;
     background-color: var(--grey-200);
 }
 
 .features-list {
-    background-color: var(--grey-200);
     margin-bottom: 80px;
     display: grid;
     outline: 5px solid rgba(0, 255, 255, 0.3);
     outline-offset: -5px;
 }
 
+.feature-item img {
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+}
+
+.feature-item h3 {
+    margin-top: 78px;
+    margin-bottom: 25px;
+}
+
+.feature-item p {
+    margin-top: 0;
+    margin-bottom: 45px;
+    max-width: 425px;
+}
+
 .feature-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
     display: none;
 }
 
-/* не работает, и я не знаю как сделать, чтобы при наведении на первую кнопку
-показывался первый слайд, на вторую - второй и т.д. */
-
-/* .slider-buttons .slider-button:first-child:active .features-list li:first-child {
-    display: block;
-} */
-
-/* тоже не работает */
-
-.slider-button:active .feature-item {
-    display: flex;
+.feature-item-active {
+    display: grid;
 }
 
 .feature-item h3 {
