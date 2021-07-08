@@ -402,7 +402,6 @@ a {
 }
 
 .feature-item {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
     display: none;
