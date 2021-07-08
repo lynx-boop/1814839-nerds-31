@@ -153,7 +153,7 @@ a {
 .footer-contacts {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    height: 217px;
+    min-height: max-content;
 }
 
 .contacts-wrapper {
@@ -235,8 +235,14 @@ a {
     outline-offset: -5px;
     justify-self: flex-start;
     align-self: center;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    /* фиксировать высоту нельзя 
+    общая высота этой секции футера 217, высота френдшипа 153
+    поэтому марджины по 32
+    коммент себе, чтобы больше не делать глупостей и не переписывать
+    и так рабочий код */
 }
 
 .footer-title {
