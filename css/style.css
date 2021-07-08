@@ -152,7 +152,6 @@ a {
 .footer-contacts {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    min-height: max-content;
 }
 
 .contacts-wrapper {
@@ -422,7 +421,8 @@ a {
 }
 
 .services {
-    margin-bottom: 82px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .service-list {
