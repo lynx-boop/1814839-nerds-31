@@ -139,7 +139,6 @@ a {
     background-color: var(--grey-100);
     z-index: 0;
     position: relative;
-    overflow: hidden;
     min-height: 416px;
 }
 
@@ -559,22 +558,18 @@ a {
     border: 0;
     width: 11px;
     height: 10px;
-    overflow: hidden;
 }
 
-.sort-button-up, .sort-button-down {
+.sort-item-up a, .sort-item-down a {
     background-color: var(--grey-500-transparent-20);
-    color: transparent;
 }
 
-.sort-button-up:hover, .sort-button-down:hover {
+.sort-item-up a:hover, .sort-item-down a:hover {
     background-color: var(--grey-500);
-    color: transparent;
 }
 
-.sort-button-up:active, .sort-button-down:active {
+.sort-item-up a:active, .sort-item-down a:active {
     background-color: var(--grey-950);
-    color: transparent;
 }
 
 .sort-item a:hover {
