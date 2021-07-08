@@ -257,8 +257,12 @@ a {
 }
 
 .button {
+    display: flex;
+    margin: 0;
+    padding: 0;
     font: inherit;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     color: var(--white);
     vertical-align: middle;
     text-transform: uppercase;
@@ -267,8 +271,7 @@ a {
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
-    border-radius: 10%;
-    /* почему эти размеры для кнопок не работают? */
+    border-radius: 3px;
     width: 160px;
     height: 50px;
 }
