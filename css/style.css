@@ -378,6 +378,17 @@ a {
     outline-offset: -5px;
 }
 
+.feature-item {
+    display: none;
+}
+
+/* не работает, и я не знаю как сделать, чтобы при наведении на первую кнопку
+показывался первый слайд, на вторую - второй и т.д. */
+
+.slider-buttons .slider-button:first-child:active .features-list li:first-child {
+    display: block;
+}
+
 .feature-item h3 {
     font-size: 55px;
     line-height: 55px;
