@@ -510,11 +510,10 @@ a {
     font-weight: 500;
     padding: 0;
     margin-bottom: 32px;
-    margin-top: 32px;
+    margin-top: 34px;
 }
 
 .mini-title-index {
-    margin-top: 40px;
     padding: 0;
 }
 
@@ -526,7 +525,7 @@ a {
 .metrics {
     outline: 5px solid rgba(7, 155, 93, 0.3);
     outline-offset: -5px;
-    justify-self: end;
+    align-self: start;
 }
 
 .orders-list {
@@ -535,8 +534,8 @@ a {
     margin-left: 35px;
 }
 
-.about-us-item {
-    margin-top: 30px;
+.orders-list .about-us-item {
+    margin-top: 33px;
 }
 
 .about-us-item span {
@@ -553,6 +552,7 @@ a {
 
 .about-us-image {
     background-color: var(--white0);
+    margin: 0;
 }
 
 .mini-title-index {
@@ -560,10 +560,14 @@ a {
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .metrics .mini-title-index {
     text-align: center;
+    margin-top: 38px;
+    margin-bottom: 47px;
 }
 
 .partners {
