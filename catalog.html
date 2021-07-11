@@ -125,8 +125,7 @@
             <div class="catalog">
                 <section class="sort">
                     <h2 class="mini-title">Сортировать:</h2>
-                    <!-- епреписать классы на нормальные sort-list-type  -->
-                    <div class="sort-item-type">
+                    <div class="sort-list-type">
                         <p class="sort-item">
                             <a href="#">По цене</a>
                         </p>
@@ -138,18 +137,17 @@
                         </p>
                     </div>
 
-                    <!-- FIXME цвет как у текста в сортировке поставить фоновой картинкой в стрелочки темные картинки и просто поменять опасити 
-                    посмотреть лайв по формам и по декору
-                сбросить паддинги на кнопка слайдера и использовать бордер вместо бэкграунд колор-->
 
                     <div class="sort-item-order">
                         <p class="sort-item sort-item-down">
                             <a class="sort-button sort-button-down" href="#">
+                                <img src="img/catalog/sort-button-down.svg" width="11" height="10" alt="Кнопка вниз">
                                 <span hidden>По убыванию</span>
                             </a>
                         </p>
                         <p class="sort-item sort-item-up">
                             <a class="sort-button sort-button-up" href="#">
+                                <img src="img/catalog/sort-button-up.svg" width="11" height="10" alt="Кнопка вверх">
                                 <span hidden>По возрастанию</span>
                             </a>
                         </p>
@@ -158,27 +156,33 @@
                 <section class="templates">
                     <h2 hidden>Список шаблонов</h2>
                     <ul class="cards-list list-style-none">
-                        <li>
-                            <a href="#">
-                                <h3>SEDONA</h3>
-                            </a>
-                            <p>Информационный сайт для туристов</p>
-                            <p>
-                                <img src="img/catalog/project_sedona.png" width="358" height="578"
-                                    alt="Велком-страница проекта Седона">
-                            </p>
-                            <a class="button buy-button" href="#">9 900 ₽</a>
+                        <li class="card">
+
+                            <img src="img/catalog/project_sedona.png" width="358" height="578"
+                                alt="Велком-страница проекта Седона">
+
+                            <div class="panel">
+                                <a class="" href="#">
+                                    <h3>SEDONA</h3>
+                                </a>
+                                <p>Информационный сайт<br>
+                                    для туристов</p>
+                                <a class="button buy-button" href="#">9 900 ₽</a>
+                            </div>
                         </li>
-                        <li>
-                            <a href="#">
-                                <h3>PINK</h3>
-                            </a>
-                            <p>Продуктовый лендинг приложения для iOS и Android</p>
-                            <p>
-                                <img src="img/catalog/project_pink.png" width="358" height="578"
-                                    alt="Велком-страница проекта Пинк">
-                            </p>
-                            <a class="button buy-button" href="#">9 900 ₽</a>
+                        <li class="card">
+
+                            <img src="img/catalog/project_pink.png" width="358" height="578"
+                                alt="Велком-страница проекта Пинк">
+
+                            <div class="panel">
+                                <a href="#">
+                                    <h3>PINK</h3>
+                                </a>
+                                <p>Продуктовый лендинг<br>
+                                    приложения для iOS и Android</p>
+                                <a class="button buy-button" href="#">9 900 ₽</a>
+                            </div>
                         </li>
                         <li>
                             <a href="#">
