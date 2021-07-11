@@ -257,12 +257,11 @@ a {
 }
 
 .button {
-    display: flex;
+    display: inline-block;
     margin: 0;
-    padding: 0;
+    padding: 16px 40px;
     font: inherit;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     color: var(--white);
     vertical-align: middle;
     text-transform: uppercase;
@@ -272,8 +271,7 @@ a {
     line-height: 18px;
     font-weight: 500;
     border-radius: 3px;
-    width: 160px;
-    height: 50px;
+    /* размеры через паддинг */
 }
 
 .button:active {
@@ -345,6 +343,10 @@ a {
     color: var(--white);
 }
 
+.contacts-adress .button {
+    width: 100%;
+}
+
 .social-button {
     background-color: var(--grey-330);
 }
@@ -363,6 +365,10 @@ a {
     display: grid;
     outline: 5px solid rgba(0, 255, 255, 0.3);
     outline-offset: -5px;
+}
+
+.feature-item .button {
+    min-width: 240px;
 }
 
 .feature-item img {
