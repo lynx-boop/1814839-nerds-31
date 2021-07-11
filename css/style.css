@@ -610,6 +610,7 @@ a {
     column-gap: 140px;
     outline: 5px solid rgba(0, 255, 255, 0.3);
     outline-offset: -5px;
+    padding: 55px;
 }
 
 .filter {
@@ -628,41 +629,43 @@ a {
     opacity: 0.3;
 }
 
-/* при попытке выравнять элементы сортировки и выстроить их в 
-соотеветсиве с макетом разметка начинает вести себя странно
-появляются лишние кнопки порядка отображения товара
-
-.sort p:nth-child(5), .sort p:last-child {
-    background-color: var(--grey-500-transparent-20);
-    color: var(--grey-500-transparent-20);
-    border: 0;
-    width: 11px;
-    height: 10px;
-}
-
 .sort {
     display: grid;
-    grid-template-columns: 4fr 2fr 1fr;
+    grid-template-columns: max-content 1fr 41px;
     justify-content: left;
+    column-gap: 47px;
+    padding:
+}
+
+.sort h2 {
+    margin: 0;
 }
 
 .sort-item-type {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 25px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.sort-item-type .sort-item {
+    margin: 0 0 0 25px;
 }
 
 .sort-item-order {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 18px;
-} */
+}
 
-.sort-item-up a, .sort-item-down a {
+.sort-item-order p {
+    margin: 0;
+}
+
+.sort-button {
     background-color: var(--grey-500-transparent-20);
+    display: block;
     width: 11px;
     height: 10px;
-    margin: 18px;
 }
 
 .sort-item-up a:hover, .sort-item-down a:hover {
@@ -701,6 +704,7 @@ a {
 
 .templates {
     display: grid;
+    margin-top: 48px;
 }
 
 .templates a:hover {
