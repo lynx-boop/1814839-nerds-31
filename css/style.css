@@ -326,20 +326,6 @@ a {
     background-color: var(--grey-310);
 }
 
-.page-button {
-    color: var(--black);
-}
-
-.page-button:hover {
-    color: var(--black);
-    background-color: var(--grey-300);
-}
-
-.page-button:active {
-    color: var(--black-transparent-30);
-    background-color: var(--grey-320);
-}
-
 .filter-button, .page-button {
     background-color: var(--grey-200);
     color: var(--black);
@@ -355,14 +341,8 @@ a {
     color: var(--black-transparent-30);
 }
 
-.buy-button:active {
+.buy-button:hover, .buy-button:active {
     color: var(--white);
-}
-
-.buttons-list a:not([href]) {
-    color: var(--black);
-    border: 3px solid var(--grey-320);
-    background-color: var(--white);
 }
 
 .social-button {
@@ -638,9 +618,9 @@ a {
     opacity: 0.3;
 }
 
-.sort {
-    display: flex;
-}
+/* при попытке выравнять элементы сортировки и выстроить их в 
+соотеветсиве с макетом разметка начинает вести себя странно
+появляются лишние кнопки порядка отображения товара
 
 .sort p:nth-child(5), .sort p:last-child {
     background-color: var(--grey-500-transparent-20);
@@ -650,8 +630,29 @@ a {
     height: 10px;
 }
 
+.sort {
+    display: grid;
+    grid-template-columns: 4fr 2fr 1fr;
+    justify-content: left;
+}
+
+.sort-item-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+}
+
+.sort-item-order {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 18px;
+} */
+
 .sort-item-up a, .sort-item-down a {
     background-color: var(--grey-500-transparent-20);
+    width: 11px;
+    height: 10px;
+    margin: 18px;
 }
 
 .sort-item-up a:hover, .sort-item-down a:hover {
@@ -660,6 +661,10 @@ a {
 
 .sort-item-up a:active, .sort-item-down a:active {
     background-color: var(--grey-950);
+}
+
+.sort-item a {
+    color: var(--black-transparent-30);
 }
 
 .sort-item a:hover {
@@ -708,6 +713,26 @@ a {
     grid-auto-rows: min-content;
     column-gap: 40px;
     row-gap: 35px;
+}
+
+.buttons-list a:not([href]) {
+    color: var(--black);
+    border: 3px solid var(--grey-320);
+    background-color: var(--white);
+}
+
+.page-button {
+    color: var(--black);
+}
+
+не понимаю, почему явно заданный цвет при наведении на кнопку все-равно подтягивает .page-button :hover {
+    color: var(--black);
+    background-color: var(--grey-300);
+}
+
+.page-button:active {
+    color: var(--black-transparent-30);
+    background-color: var(--grey-320);
 }
 
 /* /CATALOG */
