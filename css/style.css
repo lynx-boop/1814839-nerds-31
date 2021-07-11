@@ -530,6 +530,10 @@ a {
     font-weight: 700;
 }
 
+.about-us-image img {
+    display: block;
+}
+
 .about-us-image {
     background-color: var(--white0);
     margin: 0;
