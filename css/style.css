@@ -98,7 +98,6 @@ a {
 }
 
 .container {
-    display: grid;
     width: 1160px;
     margin: 0 auto;
 }
@@ -127,8 +126,27 @@ a {
     background-color: var(--grey-200);
 }
 
+/* возможно, здесь нужно увеличить кликабельную область */
+
 .site-navigation li {
     margin: 0 22px;
+}
+
+.basket {
+    position: relative;
+}
+
+/* FIXME нихт арбайтен - нет иконки корзины */
+
+.basket::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin-right: 25px;
+    background-image: url("img/cart-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .main-footer {
@@ -412,7 +430,7 @@ a {
 .slider-buttons {
     position: absolute;
     left: 540px;
-    bottom: 100px;
+    bottom: 20px;
     display: flex;
     column-gap: 17px;
     justify-content: center;
