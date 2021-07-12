@@ -126,7 +126,7 @@ a {
     background-color: var(--grey-200);
 }
 
-/* возможно, здесь нужно увеличить кликабельную область */
+/* FIXME возможно, здесь нужно увеличить кликабельную область */
 
 .site-navigation li {
     margin: 0 22px;
@@ -135,6 +135,8 @@ a {
 .basket {
     position: relative;
 }
+
+/* /кликабельную область */
 
 /* FIXME нихт арбайтен - нет иконки корзины */
 
@@ -148,6 +150,8 @@ a {
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+
+/* /нихт арбайтен */
 
 .main-footer {
     background-color: var(--white);
@@ -598,30 +602,41 @@ a {
     margin-bottom: 47px;
 }
 
-.partners {
-    outline: 5px solid rgba(7, 138, 155, 0.3);
-    outline-offset: -5px;
-}
-
 .partners-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-rows: 182px;
+    display: flex;
     column-gap: 120px;
     margin: 0 10px 82px 10px;
+    padding: 42px;
+    border-top: 2px solid var(--grey-200);
+    border-bottom: 2px solid var(--grey-200);
     justify-content: center;
     align-items: center;
 }
 
-.partners-list-item {
+.partners-list li {
+    position: relative;
+}
+
+.partners-list li+li::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 26px);
+    left: -45px;
+    width: 2px;
+    height: 52px;
+    background-color: var(--grey-200);
+}
+
+.partners-item {
+    display: block;
     opacity: 0.2;
 }
 
-.partners-list-item:hover {
+.partners-item:hover {
     opacity: 1;
 }
 
-.partners-list-item:active {
+.partners-item:active {
     opacity: 0.1;
 }
 
@@ -639,7 +654,6 @@ a {
     padding-bottom: 108px;
     outline: 5px solid rgba(255, 0, 0, 0.7);
     outline-offset: -5px;
-    grid-column: 1/-1;
 }
 
 .main-catalog {
@@ -806,7 +820,7 @@ a {
     min-width: 260px;
 }
 
-не понимаю, почему явно заданный цвет при наведении на кнопку все-равно подтягивает .page-button :hover {
+.page-button :hover {
     color: var(--black);
     background-color: var(--grey-300);
 }
