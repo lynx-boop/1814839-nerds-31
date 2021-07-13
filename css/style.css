@@ -679,6 +679,7 @@ a {
     line-height: 20px;
     font-weight: 400;
     color: var(--grey-900);
+    border: none;
 }
 
 .filter-option label {
@@ -700,13 +701,18 @@ a {
     background-image: url("../img/catalog/checkbox-off.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    opacity: .4;
 }
 
 .filter-input-checkbox:checked+span::before {
     background-image: url("../img/catalog/checkbox-on.svg");
 }
 
-.filter-parameter-item:active {
+.filter-input-checkbox:hover+span::before {
+    opacity: 1;
+}
+
+.filter-input-checkbox:disabled+span {
     opacity: 0.3;
 }
 
@@ -734,6 +740,14 @@ a {
     background-color: var(--grey-800);
     border-radius: 50%;
     opacity: .4;
+}
+
+.filter-radio-item:hover span::before, .filter-radio-item:hover span::after {
+    opacity: 1;
+}
+
+.filter-input-radio:disabled+span {
+    opacity: .1;
 }
 
 /* /радиокнопки */
@@ -843,8 +857,33 @@ a {
 }
 
 .card {
+    position: relative;
     display: grid;
     grid-template-rows: auto min-content;
+    padding-top: 40px;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 40px;
+    border-radius: 5px 5px 0 0;
+    background-color: var(--grey-800);
+    opacity: .12;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 16px;
+    width: 14px;
+    height: 14px;
+    background-color: var(--white);
+    border-radius: 50%;
 }
 
 .panel {
