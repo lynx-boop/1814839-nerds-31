@@ -107,21 +107,25 @@ a {
     justify-content: center;
 }
 
-.site-navigation a:hover {
+.site-navigation a:hover, .basket a:hover {
     color: var(--red-400);
 }
 
-.site-navigation a:active {
+.site-navigation a:active, .basket a:active {
     color: var(--black-transparent-30);
 }
 
-.site-navigation a {
+.site-navigation a, .basket a {
+    padding-top: 70px;
+    padding-bottom: 70px;
     color: var(--black);
 }
 
-.site-navigation a:hover, .site-navigation a:focus {
+/* странное свойство, котрое ничего не делает */
+
+/* .site-navigation a:hover, .site-navigation a:focus {
     background-color: var(--grey-200);
-}
+} */
 
 /* FIXME возможно, здесь нужно увеличить кликабельную область через паддинги для ссылки */
 
