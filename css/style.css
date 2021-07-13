@@ -47,8 +47,6 @@
     display: grid;
     align-content: start;
     grid-template-rows: min-content 1fr min-content;
-    outline: 5px solid rgba(255, 30, 0, 0.3);
-    outline-offset: -5px;
 }
 
 a {
@@ -89,15 +87,11 @@ a {
     color: var(--black);
     text-transform: uppercase;
     font-weight: 500;
-    outline: 5px solid rgba(0, 81, 255, 0.3);
-    outline-offset: -5px;
     padding-top: 50px;
     padding-bottom: 50px;
     display: grid;
     align-items: center;
     grid-template-columns: min-content 1fr min-content;
-    outline: 5px solid rgba(145, 255, 0, 0.3);
-    outline-offset: -5px;
 }
 
 .container {
@@ -154,9 +148,8 @@ a {
 }
 
 .main-footer {
+    position: relative;
     background-color: var(--white);
-    outline: 5px solid rgba(255, 251, 0, 0.3);
-    outline-offset: -5px;
 }
 
 .footer-location {
@@ -200,8 +193,6 @@ a {
     width: 320px;
     padding: 50px;
     background-color: var(--white);
-    outline: 5px solid rgba(162, 0, 255, 0.3);
-    outline-offset: -5px;
 }
 
 .contacts-marker {
@@ -211,8 +202,6 @@ a {
 }
 
 .social {
-    outline: 5px solid rgba(75, 4, 71, 0.3);
-    outline-offset: -5px;
     display: flex;
     justify-self: start;
     align-self: center;
@@ -233,8 +222,6 @@ a {
 .friendship {
     background-color: var(--white);
     text-align: left;
-    outline: 5px solid rgba(75, 4, 45, 0.3);
-    outline-offset: -5px;
     justify-self: flex-start;
     align-self: center;
     padding: 0;
@@ -355,13 +342,15 @@ a {
 }
 
 .modal {
-    position: absolute;
-    left: 100px;
-    bottom: 50px;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
     width: fit-content;
     padding: 63px 99px 84px 100px;
     background-color: var(--white);
     box-shadow: 0 20px 40px 0 var(--black-transparent-40);
+    display: none;
 }
 
 .modal-form {
@@ -475,8 +464,6 @@ a {
 .slider-list {
     margin-bottom: 80px;
     display: grid;
-    outline: 5px solid rgba(0, 255, 255, 0.3);
-    outline-offset: -5px;
 }
 
 .slider-item .button {
@@ -564,14 +551,10 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
     align-content: flex-start;
     column-gap: 100px;
-    outline: 5px solid rgba(250, 8, 109, 0.3);
-    outline-offset: -5px;
     padding-right: 60px;
 }
 
 .service-item {
-    outline: 5px solid rgba(8, 73, 250, 0.3);
-    outline-offset: -5px;
     display: flex;
     flex-direction: column-reverse;
 }
@@ -628,14 +611,7 @@ a {
     padding: 0;
 }
 
-.studio {
-    outline: 5px solid rgba(8, 250, 28, 0.3);
-    outline-offset: -5px;
-}
-
 .metrics {
-    outline: 5px solid rgba(7, 155, 93, 0.3);
-    outline-offset: -5px;
     align-self: start;
 }
 
@@ -735,16 +711,12 @@ a {
     background-color: var(--grey-200);
     margin: 0;
     padding-bottom: 108px;
-    outline: 5px solid rgba(255, 0, 0, 0.7);
-    outline-offset: -5px;
 }
 
 .main-catalog {
     display: grid;
     grid-template-columns: 260px 1fr;
     column-gap: 140px;
-    outline: 5px solid rgba(0, 255, 255, 0.3);
-    outline-offset: -5px;
     padding-top: 55px;
 }
 
