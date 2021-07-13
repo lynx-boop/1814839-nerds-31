@@ -884,6 +884,7 @@ a {
     height: 14px;
     background-color: var(--white);
     border-radius: 50%;
+    box-shadow: 23px 0 0 var(--white), 46px 0 0 var(--white);
 }
 
 .panel {
