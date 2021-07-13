@@ -712,26 +712,28 @@ a {
 
 /* радиокнопки */
 
-.filter-radio-item::before .filter-input-radio {
+.filter-input-radio+span::before {
     content: "";
     position: absolute;
     left: 0px;
     top: 0px;
     width: 25px;
     height: 25px;
-    border: 2px solid var(--grey-200);
+    border: 4px solid var(--grey-800);
     border-radius: 50%;
+    opacity: .4;
 }
 
-.filter-radio-item::after .filter-input-radio:checked {
+.filter-input-radio:checked+span::after {
     content: "";
     position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 5px;
-    height: 5px;
-    border: 2px solid var(--grey-200);
+    left: 8px;
+    top: 8px;
+    width: 9px;
+    height: 9px;
+    background-color: var(--grey-800);
     border-radius: 50%;
+    opacity: .4;
 }
 
 /* /радиокнопки */
