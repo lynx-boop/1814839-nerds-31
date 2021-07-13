@@ -668,6 +668,10 @@ a {
     outline-offset: -5px;
 }
 
+.filter-option {
+    margin-bottom: 20px;
+}
+
 /* чекбоксы */
 
 .filter-style {
@@ -677,52 +681,60 @@ a {
     color: var(--grey-900);
 }
 
-/* FIXME работает, почему работает?! */
-
 .filter-option label {
     position: relative;
     display: block;
     cursor: pointer;
     user-select: none;
+    padding-left: 30px;
+    /* padding: добавить */
 }
 
-/* FIXME не работает. почему? */
-
-/* .filter-parameter-item {
-    position: relative;
-    display: block;
-    cursor: pointer;
-    user-select: none;
-} */
-
-/* FIXME здесь нужно привязать этот квадратик к лэйблу и чекбоксу, но оно не работает таким образом почему-то */
-
-.filter-parameter-item::before .filter-input-checkbox {
+.filter-input-checkbox+span::before {
     content: "";
     position: absolute;
     left: 0;
     top: 0;
-    width: 23px;
+    width: 25px;
     height: 23px;
-    border: 2px solid var(--grey-200);
-}
-
-.filter-parameter-item::after .filter-input-checkbox:checked {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 23px;
-    height: 23px;
-    border: 2px solid var(--grey-200);
-    background-image: url("../img/checkbox-checked.svg");
+    background-image: url("../img/catalog/checkbox-off.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+}
+
+.filter-input-checkbox:checked+span::before {
+    background-image: url("../img/catalog/checkbox-on.svg");
 }
 
 .filter-parameter-item:active {
     opacity: 0.3;
 }
+
+/* радиокнопки */
+
+.filter-radio-item::before .filter-input-radio {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 25px;
+    height: 25px;
+    border: 2px solid var(--grey-200);
+    border-radius: 50%;
+}
+
+.filter-radio-item::after .filter-input-radio:checked {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 5px;
+    height: 5px;
+    border: 2px solid var(--grey-200);
+    border-radius: 50%;
+}
+
+/* /радиокнопки */
 
 .visually-hidden {
     position: absolute;
