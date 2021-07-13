@@ -941,6 +941,22 @@ a {
     margin: 0;
 }
 
+.sort-item a {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: .3;
+}
+
+.sort-item a:hover {
+    opacity: .6;
+}
+
+.sort-item a:active {
+    opacity: 1;
+}
+
 .sort-list-type .sort-item {
     margin: 0 0 0 25px;
 }
@@ -971,13 +987,6 @@ a {
 
 .sort-button-up:active, .sort-button-down:active {
     opacity: 1;
-}
-
-.sort-item {
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
 }
 
 .mini-title, .templates h3 {
