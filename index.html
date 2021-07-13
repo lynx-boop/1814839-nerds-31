@@ -229,11 +229,14 @@
           <p>
             <a class="button red-button" href="#">Напишите нам</a>
           </p>
+
+          <img class="contacts-marker" src="img/map-marker.png" width="231" height="190" alt="Маркер расположения">
+
         </div>
 
-        <div class="contacts-marker">
-          <img src="img/map-marker.png" width="231" height="190" alt="Маркер расположения">
-        </div>
+
+
+
       </div>
     </section>
 
@@ -269,27 +272,25 @@
     </div>
 
     <section class="modal">
-      <div class="modal-wrapper">
-        <button class="modal-close" type="button">Закрыть</button>
-        <h2 class="modal-title">Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p class="modal-name">
-            <label for="name">Ваше имя:</label>
-            <input id="name" type="text" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p class="modal-login">
-            <label for="login-login">Ваш email:</label>
-            <input id="login-login" type="email" name="login" placeholder="email@example.com">
-          </p>
-          <p class="modal-comment">
-            <label for="comment">Текст письма:</label>
-            <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
-          </p>
-          <p class="modal-send">
-            <button type="submit" class="button red-button">Отправить</button>
-          </p>
-        </form>
-      </div>
+      <button class="modal-close" type="button">Закрыть</button>
+      <h2 class="modal-title">Напишите нам</h2>
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="modal-name">
+          <label for="name">Ваше имя:</label>
+          <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="modal-login">
+          <label for="login-login">Ваш email:</label>
+          <input id="login-login" type="email" name="login" placeholder="email@example.com">
+        </p>
+        <p class="modal-comment">
+          <label for="comment">Текст письма:</label>
+          <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
+        </p>
+        <p class="modal-send">
+          <button type="submit" class="button red-button">Отправить</button>
+        </p>
+      </form>
     </section>
 
   </footer>

@@ -162,7 +162,6 @@ a {
     position: relative;
     background-color: var(--grey-100);
     z-index: 0;
-    position: relative;
     min-height: 416px;
 }
 
@@ -196,6 +195,7 @@ a {
 }
 
 .contacts-adress {
+    position: relative;
     width: 320px;
     padding: 50px;
     background-color: var(--white);
@@ -205,7 +205,7 @@ a {
 
 .contacts-marker {
     position: absolute;
-    left: 1930px;
+    left: 790px;
     bottom: 100px;
 }
 
@@ -353,21 +353,27 @@ a {
     background-color: var(--grey-330);
 }
 
-.modal {
-    display: flex;
-    padding: 63px 99px 84px 100px;
-    flex-basis: min-content;
-}
-
-.modal-wrapper {
+.modal-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+    /* padding: 63px 99px 84px 100px; */
     width: 960px;
     height: 590px;
 }
 
 .modal-title {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row: 1/2;
     font-size: 45px;
     line-height: 53px;
     font-weight: 700;
+}
+
+.modal-close {
+    grid-column: -2/-1;
 }
 
 /* вообще не понимаю, что это здесь делает и что это вообще  */
