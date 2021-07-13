@@ -60,13 +60,26 @@
                 <h2 hidden>Фильтр товаров</h2>
 
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                    <p class="mini-title">Стоимость</p>
-                    <label>от
-                        <input type="text" name="price-from" value="0">
-                    </label>
-                    <label>до
-                        <input type="text" name="price-to" value="15000">
-                    </label>
+                    <fieldset class="filter-item">
+                        <legend class="">Стоимость:</legend>
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="toggle toggle-min"></div>
+                                <div class="toggle toggle-max"></div>
+                            </div>
+                            <div class="price-controls">
+                                <label class="min-price">
+                                    от <input type="number" name="min-price" value="0">
+                                </label>
+                                <label class="max-price">
+                                    до <input type="number" name="max-price" value="15000">
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
 
                     <fieldset class="filter-style">
                         <legend class="mini-title">Сетка</legend>

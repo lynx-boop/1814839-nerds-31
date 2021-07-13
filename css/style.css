@@ -10,6 +10,7 @@
     --grey-400: #B4B9BB;
     --grey-410: #C1C1C1;
     --grey-500: #A6A6A6;
+    --grey-510: #ABABAB;
     --grey-500-transparent-20: rgba(166, 166, 166, .20);
     --grey-800: #4D4D4D;
     --grey-900: #283136;
@@ -672,6 +673,59 @@ a {
     margin-bottom: 20px;
 }
 
+/* слайдер с ценой */
+
+.filter-item {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.filter-item legend {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.range-filter {
+    width: 260px;
+    margin-top: 49px;
+}
+
+.range-controls {
+    position: relative;
+    height: 80px;
+    margin-bottom: 15px;
+    padding-top: 39px;
+    padding-left: 22px;
+    padding-right: 22px;
+    background-color: var(--grey-200);
+    border-radius: 5px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: var(--grey-100);
+}
+
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    background: var(--green-400);
+}
+
+.range-controls .toggle {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: 8px solid var(--white);
+    background-color: var(--grey-510);
+    border-radius: 50%;
+}
+
+/* /слайдер с ценой */
+
 /* чекбоксы */
 
 .filter-style {
@@ -750,8 +804,6 @@ a {
     opacity: .1;
 }
 
-/* /радиокнопки */
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -764,6 +816,8 @@ a {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+/* /радиокнопки */
 
 .sort {
     display: grid;
