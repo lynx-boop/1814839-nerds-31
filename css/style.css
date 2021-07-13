@@ -854,6 +854,9 @@ a {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
+    border: 1px solid var(--grey-200);
+    border-top: 0;
+    border-radius: 0 0 5px 5px;
 }
 
 .card {
@@ -887,6 +890,10 @@ a {
     box-shadow: 23px 0 0 var(--white), 46px 0 0 var(--white);
 }
 
+.card:hover::before {
+    opacity: 1;
+}
+
 .panel {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
@@ -894,6 +901,12 @@ a {
     padding-bottom: 44px;
     background-color: var(--grey-200);
     text-align: center;
+    border-radius: 0 0 5px 5px;
+    opacity: 0;
+}
+
+.card:hover .panel, .card:focus-within .panel {
+    opacity: 1;
 }
 
 .cards-list {
