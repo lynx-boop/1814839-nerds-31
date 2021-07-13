@@ -100,6 +100,7 @@ a {
 }
 
 .site-navigation {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -121,13 +122,21 @@ a {
     color: var(--black);
 }
 
+.active-page::before {
+    content: "";
+    position: absolute;
+    right: 378px;
+    top: 40px;
+    width: 73px;
+    height: 2px;
+    background-image: url("../img/active-page-underline.svg");
+}
+
 /* странное свойство, котрое ничего не делает */
 
 /* .site-navigation a:hover, .site-navigation a:focus {
     background-color: var(--grey-200);
 } */
-
-/* FIXME возможно, здесь нужно увеличить кликабельную область через паддинги для ссылки */
 
 .site-navigation li {
     margin: 0 22px;
@@ -136,8 +145,6 @@ a {
 .basket {
     position: relative;
 }
-
-/* /кликабельную область */
 
 .basket::before {
     content: "";
