@@ -138,8 +138,6 @@ a {
 
 /* /кликабельную область */
 
-/* FIXME нихт арбайтен - нет иконки корзины */
-
 .basket::before {
     content: "";
     position: absolute;
@@ -151,8 +149,6 @@ a {
     background-repeat: no-repeat;
     background-position: 0 20;
 }
-
-/* /нихт арбайтен */
 
 .main-footer {
     background-color: var(--white);
@@ -666,20 +662,79 @@ a {
     padding-top: 55px;
 }
 
-.filter {
+.filters {
+    width: 260px;
     outline: 5px solid rgba(6, 66, 66, 0.3);
     outline-offset: -5px;
 }
 
-.filter-parameters {
+/* чекбоксы */
+
+.filter-style {
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
     color: var(--grey-900);
 }
 
+/* FIXME работает, почему работает?! */
+
+.filter-option label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* FIXME не работает. почему? */
+
+/* .filter-parameter-item {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+} */
+
+/* FIXME здесь нужно привязать этот квадратик к лэйблу и чекбоксу, но оно не работает таким образом почему-то */
+
+.filter-parameter-item::before .filter-input-checkbox {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 23px;
+    height: 23px;
+    border: 2px solid var(--grey-200);
+}
+
+.filter-parameter-item::after .filter-input-checkbox:checked {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 23px;
+    height: 23px;
+    border: 2px solid var(--grey-200);
+    background-image: url("../img/checkbox-checked.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
 .filter-parameter-item:active {
     opacity: 0.3;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .sort {

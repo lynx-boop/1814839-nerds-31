@@ -55,9 +55,11 @@
 
         <div class="main-catalog container">
 
-            <section class="filter">
+            <section class="filters">
+
                 <h2 hidden>Фильтр товаров</h2>
-                <form class="filter-parameters" method="get" action="https://echo.htmlacademy.ru">
+
+                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                     <p class="mini-title">Стоимость</p>
                     <label>от
                         <input type="text" name="price-from" value="0">
@@ -66,7 +68,7 @@
                         <input type="text" name="price-to" value="15000">
                     </label>
 
-                    <fieldset class="filter-parameters">
+                    <fieldset class="filter-style">
                         <legend class="mini-title">Сетка</legend>
                         <ul class="list-style-none">
                             <li>
@@ -87,32 +89,37 @@
                         </ul>
                     </fieldset>
 
-                    <fieldset class="filter-parameters">
+                    <fieldset class="filter-style">
                         <legend class="mini-title">Особенности</legend>
                         <ul class="list-style-none">
-                            <li>
+                            <li class="filter-option filter-checkbox">
                                 <label class="filter-parameter-item">
-                                    <input type="checkbox" name="slider" checked>Слайдер
+                                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider"
+                                        checked>Слайдер
                                 </label>
                             </li>
-                            <li>
+                            <li class="filter-option filter-checkbox">
                                 <label class="filter-parameter-item">
-                                    <input type="checkbox" name="advantages">Преимущества
+                                    <input class="visually-hidden filter-input-checkbox" type="checkbox"
+                                        name="advantages">Преимущества
                                 </label>
                             </li>
-                            <li>
+                            <li class="filter-option filter-checkbox">
                                 <label class="filter-parameter-item">
-                                    <input type="checkbox" name="news" checked>Новости
+                                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news"
+                                        checked>Новости
                                 </label>
                             </li>
-                            <li>
+                            <li class="filter-option filter-checkbox">
                                 <label class="filter-parameter-item">
-                                    <input type="checkbox" name="gallery">Галерея
+                                    <input class="visually-hidden filter-input-checkbox" type="checkbox"
+                                        name="gallery">Галерея
                                 </label>
                             </li>
-                            <li>
+                            <li class="filter-option filter-checkbox">
                                 <label class="filter-parameter-item">
-                                    <input type="checkbox" name="basket">Корзина
+                                    <input class="visually-hidden filter-input-checkbox" type="checkbox"
+                                        name="basket">Корзина
                                 </label>
                             </li>
                         </ul>
