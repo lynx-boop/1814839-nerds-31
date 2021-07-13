@@ -231,7 +231,29 @@
           </p>
 
           <img class="contacts-marker" src="img/map-marker.png" width="231" height="190" alt="Маркер расположения">
-
+          <div class="modal">
+            <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+              <h2 class="modal-title">Напишите нам</h2>
+              <button class="modal-close" type="button"><span hidden>Закрыть</span>
+                <img src="img/close-cross.svg" width="21" height="21" alt="Закрыть окноы">
+              </button>
+              <p class="modal-name">
+                <label for="name">Ваше имя:</label><br>
+                <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+              </p>
+              <p class="modal-login">
+                <label for="login-login">Ваш email:</label><br>
+                <input id="login-login" type="email" name="login" placeholder="email@example.com">
+              </p>
+              <p class="modal-comment">
+                <label for="comment">Текст письма:</label><br>
+                <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
+              </p>
+              <p class="modal-send">
+                <button type="submit" class="button red-button">Отправить</button>
+              </p>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -266,30 +288,6 @@
         </div>
       </section>
     </div>
-
-    <section class="modal">
-      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-        <h2 class="modal-title">Напишите нам</h2>
-        <button class="modal-close" type="button"><span hidden>Закрыть</span>
-          <img src="img/close-cross.svg" width="21" height="21" alt="Закрыть окноы">
-        </button>
-        <p class="modal-name">
-          <label for="name">Ваше имя:</label><br>
-          <input id="name" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p class="modal-login">
-          <label for="login-login">Ваш email:</label><br>
-          <input id="login-login" type="email" name="login" placeholder="email@example.com">
-        </p>
-        <p class="modal-comment">
-          <label for="comment">Текст письма:</label><br>
-          <textarea name="comment" id="comment" placeholder="В свободной форме"></textarea>
-        </p>
-        <p class="modal-send">
-          <button type="submit" class="button red-button">Отправить</button>
-        </p>
-      </form>
-    </section>
 
   </footer>
 

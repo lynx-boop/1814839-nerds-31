@@ -154,7 +154,6 @@ a {
 }
 
 .main-footer {
-    position: relative;
     background-color: var(--white);
     outline: 5px solid rgba(255, 251, 0, 0.3);
     outline-offset: -5px;
@@ -357,8 +356,8 @@ a {
 
 .modal {
     position: absolute;
-    left: 650px;
-    bottom: 100px;
+    left: 100px;
+    bottom: 50px;
     width: fit-content;
     padding: 63px 99px 84px 100px;
     background-color: var(--white);
