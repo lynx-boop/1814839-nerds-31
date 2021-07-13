@@ -384,7 +384,7 @@ a {
 
 /* INDEX */
 
-.features {
+.sliders {
     display: grid;
     background-color: var(--grey-200);
 }
@@ -458,6 +458,7 @@ a {
     margin: 0;
     padding: 0;
     display: flex;
+    cursor: pointer;
 }
 
 .slider-control-active::after {
