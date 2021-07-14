@@ -14,7 +14,9 @@
     --grey-500: #A6A6A6;
     --grey-510: #ABABAB;
     --grey-500-transparent-20: rgba(166, 166, 166, .20);
+    --grey-700: #666666;
     --grey-800: #4D4D4D;
+    --grey-810: #444444;
     --grey-900: #283136;
     --grey-950: #231F20;
     --red-400: #FB565A;
@@ -32,6 +34,11 @@
     --black-transparent-30: rgba(0, 0, 0, .30);
     --black-transparent-40: rgba(0, 0, 0, .40);
     --black-transparent-60: rgba(0, 0, 0, .60);
+}
+
+.page {
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .page-body {
@@ -53,11 +60,6 @@
 a {
     text-decoration: none;
     color: var(--black);
-}
-
-.page {
-    height: 100%;
-    box-sizing: border-box;
 }
 
 *, *::before, *::after {
@@ -250,6 +252,7 @@ a {
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
+    color: var(--grey-810);
 }
 
 .button {
@@ -563,6 +566,10 @@ a {
     border-top: 2px solid var(--grey-200);
 }
 
+.about-us-item span, .about-us-item sup {
+    color: var(--black);
+}
+
 .metrics {
     align-self: flex-end;
 }
@@ -796,7 +803,6 @@ a {
     padding: 10px;
     margin-left: 10px;
     text-align: center;
-    color: var(--grey-510);
     border: none;
     border-radius: 5px;
     background: var(--grey-210);
@@ -1102,3 +1108,11 @@ a {
 }
 
 /* /CATALOG */
+
+.not-black {
+    color: var(--grey-900);
+}
+
+.not-even-grey-900-you-are-kidding-me {
+    color: var(--grey-700);
+}
