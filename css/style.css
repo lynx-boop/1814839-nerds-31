@@ -367,7 +367,7 @@ a {
     padding: 63px 99px 84px 100px;
     background-color: var(--white);
     box-shadow: 0 20px 40px 0 var(--black-transparent-40);
-    /* display: none; */
+    display: none;
 }
 
 .modal-title {
@@ -426,117 +426,6 @@ a {
 .modal-send {
     grid-column: span 3;
 }
-
-/* .modal {
-    position: fixed;
-    left: 50%;
-    right: 50%;
-    bottom: 50%;
-    width: fit-content;
-    padding: 63px 99px 84px 100px;
-    background-color: var(--white);
-    box-shadow: 0 20px 40px 0 var(--black-transparent-40);
-    display: none;
-}
-
-.modal-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    column-gap: 40px;
-    width: 960px;
-    height: 590px;
-}
-
-.modal-close {
-    grid-column: -2/-1;
-    width: 21px;
-    height: 21px;
-    background-color: transparent;
-    border: none;
-    align-self: center;
-    justify-self: right;
-}
-
-.modal-title {
-    grid-column: 1/8;
-    grid-row: 1/1;
-    font-size: 45px;
-    line-height: 53px;
-    font-weight: 700;
-    align-self: center;
-}
-
-.modal-name {
-    grid-column: 1/9;
-    grid-row: 2/2;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 700;
-    align-self: center;
-}
-
-.modal-name input, .modal-login input {
-    width: 360px;
-    height: 50px;
-}
-
-.modal-login {
-    grid-column: -6/-1;
-    grid-row: 2/2;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 700;
-    align-self: center;
-    margin-left: 0px;
-}
-
-.modal-comment {
-    grid-column: 1/-1;
-    grid-row-start: 3;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 700;
-    align-self: center;
-}
-
-.modal-comment textarea {
-    width: 760px;
-    height: 145px;
-}
-
-.modal-send {
-    grid-column: 1/-1;
-    grid-row-start: 4;
-    align-self: center;
-}
-
-.modal-send button {
-    min-width: 259px;
-} */
-
-/* вообще не понимаю, что это здесь делает и что это вообще  */
-
-/* .modal-write-us input, .modal-write-us textarea {
-    background-color: transparent;
-    border: 2px solid var(--grey-100);
-}
-
-.modal-write-us input:hover, .modal-write-us textarea:hover {
-    border: 2px solid var(--grey-400);
-    color: var(--grey-400);
-    ;
-}
-
-.modal-write-us input:focus, .modal-write-us textarea:focus {
-    border: 2px solid var(--black);
-    color: var(--black);
-}
-
-.modal-write-us :invalid {
-    border: 2px solid var(--red-400);
-    color: var(--red-400);
-} */
 
 /* /COMMON */
 
