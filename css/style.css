@@ -176,6 +176,7 @@ a {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
+    color: var(--black);
 }
 
 .footer-contacts {
@@ -244,12 +245,14 @@ a {
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
+    color: var(--black);
 }
 
 .footer-text {
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
+    color: var(--black);
 }
 
 .button {
@@ -374,6 +377,7 @@ a {
     font-weight: 700;
     width: max-content;
     margin-right: 0;
+    color: var(--black);
 }
 
 .modal-close {
@@ -474,6 +478,7 @@ a {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
+    color: var(--black);
 }
 
 .slider {
@@ -552,6 +557,7 @@ a {
     line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
+    color: var(--black);
 }
 
 .about-us {
@@ -578,6 +584,7 @@ a {
     padding: 0;
     margin-bottom: 32px;
     margin-top: 34px;
+    color: var(--black);
 }
 
 .mini-title-index {
@@ -602,12 +609,14 @@ a {
     font-size: 45px;
     line-height: 64px;
     font-weight: 700;
+    color: var(--black);
 }
 
 .about-us-item sup {
     font-size: 26px;
     line-height: 40px;
     font-weight: 700;
+    color: var(--black);
 }
 
 .about-us-image img {
@@ -626,6 +635,7 @@ a {
     text-transform: uppercase;
     margin-top: 40px;
     margin-bottom: 30px;
+    color: var(--black);
 }
 
 .metrics .mini-title-index {
@@ -684,6 +694,7 @@ a {
     background-color: var(--grey-200);
     margin: 0;
     padding-bottom: 108px;
+    color: var(--black);
 }
 
 .main-catalog {
@@ -714,6 +725,7 @@ a {
     line-height: 24px;
     text-transform: uppercase;
     font-weight: 700;
+    color: var(--black);
 }
 
 .range-filter {
@@ -774,6 +786,7 @@ a {
     text-transform: uppercase;
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
+    color: var(--black);
 }
 
 .price-controls input {
@@ -914,6 +927,7 @@ a {
     font-weight: 400;
     text-transform: uppercase;
     opacity: .3;
+    color: var(--black);
 }
 
 .sort-item a:hover {
@@ -961,6 +975,7 @@ a {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
+    color: var(--black);
 }
 
 .templates {
@@ -980,6 +995,7 @@ a {
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
+    color: var(--black);
 }
 
 .card img {
