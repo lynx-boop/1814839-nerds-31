@@ -207,12 +207,6 @@ a {
     background-color: var(--white);
 }
 
-.contacts-marker {
-    position: absolute;
-    left: 790px;
-    bottom: 100px;
-}
-
 .social {
     display: flex;
     justify-self: start;
