@@ -904,7 +904,7 @@ a {
 .sort-list-type {
     display: flex;
     justify-content: flex-end;
-    align-items: top;
+    align-items: flex-start;
     margin: 0;
 }
 
