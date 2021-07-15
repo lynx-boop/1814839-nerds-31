@@ -109,6 +109,7 @@ a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-top: 5px;
 }
 
 .site-navigation a:hover, .basket a:hover {
@@ -158,12 +159,6 @@ a {
     height: 2px;
     background-image: url("../img/active-page-underline.svg");
 }
-
-/* странное свойство, котрое ничего не делает */
-
-/* .site-navigation a:hover, .site-navigation a:focus {
-    background-color: var(--grey-200);
-} */
 
 .main-footer {
     position: relative;
