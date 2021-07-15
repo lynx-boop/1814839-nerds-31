@@ -125,22 +125,6 @@ a {
     color: var(--black);
 }
 
-.active-page::before {
-    content: "";
-    position: absolute;
-    right: 378px;
-    top: 40px;
-    width: 73px;
-    height: 2px;
-    background-image: url("../img/active-page-underline.svg");
-}
-
-/* странное свойство, котрое ничего не делает */
-
-/* .site-navigation a:hover, .site-navigation a:focus {
-    background-color: var(--grey-200);
-} */
-
 .site-navigation li {
     margin: 0 22px;
 }
@@ -160,6 +144,22 @@ a {
     background-repeat: no-repeat;
     background-position: 0 20;
 }
+
+.active-page::before {
+    content: "";
+    position: absolute;
+    right: 378px;
+    top: 40px;
+    width: 73px;
+    height: 2px;
+    background-image: url("../img/active-page-underline.svg");
+}
+
+/* странное свойство, котрое ничего не делает */
+
+/* .site-navigation a:hover, .site-navigation a:focus {
+    background-color: var(--grey-200);
+} */
 
 .main-footer {
     position: relative;
