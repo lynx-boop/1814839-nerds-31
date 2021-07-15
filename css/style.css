@@ -970,10 +970,20 @@ a {
 }
 
 .sort-list-type {
+    position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     margin: 0;
+}
+
+/* Этот кусок кода нужен ТОЛЬКО для того, чтобы смещать малюсенький кусочек кода на 2 пикселя ниже остальных 
+элементов в списке, чтобы он был точно по ПП */
+
+.sort-list-type .sort-item:first-child {
+    position: absolute;
+    left: 194px;
+    top: 3px;
 }
 
 .sort-item a {
