@@ -547,7 +547,7 @@ a {
 
 .service-item p a {
     margin-bottom: 0;
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .service-item h3 {
@@ -566,7 +566,12 @@ a {
     border-top: 2px solid var(--grey-200);
 }
 
-.about-us-item span, .about-us-item sup {
+.about-us-item span {
+    margin-right: -3px;
+    color: var(--black);
+}
+
+.about-us-item sup {
     color: var(--black);
 }
 
@@ -576,6 +581,7 @@ a {
 
 .about-us-list {
     display: flex;
+    column-gap: 4px;
 }
 
 .us {
@@ -584,7 +590,7 @@ a {
     font-weight: 500;
     padding: 0;
     margin-bottom: 32px;
-    margin-top: 34px;
+    margin-top: 25px;
 }
 
 .mini-title-index {
@@ -633,6 +639,7 @@ a {
 
 .about-us-image img {
     display: block;
+    margin-top: -11px;
 }
 
 .about-us-image {
@@ -651,8 +658,8 @@ a {
 
 .metrics .mini-title-index {
     text-align: center;
-    margin-top: 38px;
-    margin-bottom: 47px;
+    margin-top: 37px;
+    margin-bottom: 31px;
 }
 
 .partners-list {
