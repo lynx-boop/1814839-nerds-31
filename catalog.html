@@ -65,90 +65,95 @@
                         <div class="range-filter">
                             <div class="range-controls">
                                 <div class="scale">
-                                    <div class="bar" style=" width: 70%; margin-left: 0%"></div>
+                                    <div class="bar" style="width: 70%; margin-left: 0%"></div>
                                 </div>
                                 <div class="toggle toggle-min" tabindex="0" style="
-                                left: 5%"></div>
+                                left: 6%"></div>
                                 <div class="toggle toggle-max" tabindex="0" style="
-                                left: 60%"></div>
+                                left: 61%"></div>
                             </div>
                             <div class=" price-controls">
                                 <label class="min-price not-black">
                                     от <input class="not-black" type="text" name="min-price" value="0">
                                 </label>
                                 <label class="max-price not-black">
-                                    до <input class="not-black" type="text" name="max-price" value="15 000">
+                                    до <input class="not-black" type="text" name="max-price" value="150 000">
                                 </label>
                             </div>
                         </div>
                     </fieldset>
 
-                    <fieldset class="filter-style">
-                        <legend class="mini-title">Сетка</legend>
-                        <ul class="list-style-none">
-                            <li class="filter-option filter-radio">
-                                <label class="filter-radio-item">
-                                    <input class="filter-input-radio visually-hidden" type="radio" name="grid-system"
-                                        value="adpt" checked>
-                                    <span>Адаптивная</span>
-                                </label>
-                            </li>
-                            <li class="filter-option filter-radio">
-                                <label class="filter-radio-item">
-                                    <input class="filter-input-radio visually-hidden" type="radio" name="grid-system"
-                                        value="fxd">
-                                    <span>Фиксированная</span>
-                                </label>
-                            </li>
-                            <li class="filter-option filter-radio">
-                                <label class="filter-radio-item">
-                                    <input class="filter-input-radio visually-hidden" type="radio" name="grid-system"
-                                        value="rbr">
-                                    <span>Резиновая</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </fieldset>
+                    <div class="grid-filters">
 
-                    <fieldset class="filter-style">
-                        <legend class="mini-title">Особенности</legend>
-                        <ul class="list-style-none">
-                            <li class="filter-option filter-checkbox">
-                                <label class="filter-parameter-item">
-                                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider"
-                                        checked>
-                                    <span>Слайдер</span>
-                                </label>
-                            </li>
-                            <li class="filter-option filter-checkbox">
-                                <label class="filter-parameter-item">
-                                    <input class="visually-hidden filter-input-checkbox" type="checkbox"
-                                        name="advantages">
-                                    <span>Преимущества</span>
-                                </label>
-                            </li>
-                            <li class="filter-option filter-checkbox">
-                                <label class="filter-parameter-item">
-                                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news"
-                                        checked>
-                                    <span>Новости</span>
-                                </label>
-                            </li>
-                            <li class="filter-option filter-checkbox">
-                                <label class="filter-parameter-item">
-                                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gallery">
-                                    <span>Галерея</span>
-                                </label>
-                            </li>
-                            <li class="filter-option filter-checkbox">
-                                <label class="filter-parameter-item">
-                                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="basket">
-                                    <span>Корзина</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <button class="filter-button button" type="submit">Показать</button>
+                        <fieldset class="filter-style">
+                            <legend class="mini-title">Сетка:</legend>
+                            <ul class="list-style-none filter-radio-list">
+                                <li class="filter-option filter-radio">
+                                    <label class="filter-radio-item">
+                                        <input class="filter-input-radio visually-hidden" type="radio"
+                                            name="grid-system" value="adpt" checked>
+                                        <span>Адаптивная</span>
+                                    </label>
+                                </li>
+                                <li class="filter-option filter-radio">
+                                    <label class="filter-radio-item">
+                                        <input class="filter-input-radio visually-hidden" type="radio"
+                                            name="grid-system" value="fxd">
+                                        <span>Фиксированная</span>
+                                    </label>
+                                </li>
+                                <li class="filter-option filter-radio">
+                                    <label class="filter-radio-item">
+                                        <input class="filter-input-radio visually-hidden" type="radio"
+                                            name="grid-system" value="rbr">
+                                        <span>Резиновая</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+
+                        <fieldset class="filter-style">
+                            <legend class="mini-title">Особенности:</legend>
+                            <ul class="list-style-none filter-checkbox-list">
+                                <li class="filter-option filter-checkbox">
+                                    <label class="filter-parameter-item">
+                                        <input class="visually-hidden filter-input-checkbox" type="checkbox"
+                                            name="slider" checked>
+                                        <span>Слайдер</span>
+                                    </label>
+                                </li>
+                                <li class="filter-option filter-checkbox">
+                                    <label class="filter-parameter-item">
+                                        <input class="visually-hidden filter-input-checkbox" type="checkbox"
+                                            name="advantages">
+                                        <span>Преимущества</span>
+                                    </label>
+                                </li>
+                                <li class="filter-option filter-checkbox">
+                                    <label class="filter-parameter-item">
+                                        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news"
+                                            checked>
+                                        <span>Новости</span>
+                                    </label>
+                                </li>
+                                <li class="filter-option filter-checkbox">
+                                    <label class="filter-parameter-item">
+                                        <input class="visually-hidden filter-input-checkbox" type="checkbox"
+                                            name="gallery">
+                                        <span>Галерея</span>
+                                    </label>
+                                </li>
+                                <li class="filter-option filter-checkbox">
+                                    <label class="filter-parameter-item">
+                                        <input class="visually-hidden filter-input-checkbox" type="checkbox"
+                                            name="basket">
+                                        <span>Корзина</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <button class="filter-button button" type="submit">Показать</button>
+                    </div>
                 </form>
             </section>
 
