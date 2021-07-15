@@ -566,22 +566,29 @@ a {
     border-top: 2px solid var(--grey-200);
 }
 
+.about-us-list {
+    display: flex;
+    column-gap: 20px;
+}
+
+.about-us-item {
+    display: grid;
+    grid-template-columns: 80px 20px;
+}
+
 .about-us-item span {
-    margin-right: -3px;
     color: var(--black);
 }
 
 .about-us-item sup {
+    margin-top: 17px;
+    margin-left: -2px;
     color: var(--black);
 }
 
 .metrics {
     align-self: flex-end;
-}
-
-.about-us-list {
-    display: flex;
-    column-gap: 4px;
+    align-self: start;
 }
 
 .us {
@@ -591,14 +598,6 @@ a {
     padding: 0;
     margin-bottom: 32px;
     margin-top: 25px;
-}
-
-.mini-title-index {
-    padding: 0;
-}
-
-.metrics {
-    align-self: start;
 }
 
 .studio {
@@ -652,14 +651,13 @@ a {
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 40px;
-    margin-bottom: 30px;
 }
 
 .metrics .mini-title-index {
     text-align: center;
-    margin-top: 37px;
-    margin-bottom: 31px;
+    margin-top: 38px;
+    margin-bottom: 30px;
+    margin-left: 2px;
 }
 
 .partners-list {
