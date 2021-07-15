@@ -209,6 +209,14 @@ a {
     background-color: var(--white);
 }
 
+.contacts-adress-inner h3 {
+    margin-top: 0;
+}
+
+.write-us p:last-child {
+    margin-bottom: 0;
+}
+
 .social {
     display: flex;
     justify-self: start;
