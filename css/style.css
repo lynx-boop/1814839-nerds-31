@@ -571,7 +571,7 @@ a {
     column-gap: 20px;
 }
 
-.about-us-item {
+.about-us-list .about-us-item {
     display: grid;
     grid-template-columns: 80px 20px;
 }
@@ -608,6 +608,10 @@ a {
     position: relative;
 }
 
+.studio .mini-title-index {
+    margin-top: 40px;
+}
+
 .orders-list {
     padding: 0;
     margin: 0;
@@ -618,14 +622,26 @@ a {
     content: "";
     position: absolute;
     left: 0px;
-    bottom: 20px;
+    bottom: 32px;
     width: 25px;
     height: 98px;
     background-image: url("../img/orders-list-markers.svg");
 }
 
 .orders-list .about-us-item {
-    margin-top: 33px;
+    margin-left: 1px;
+}
+
+.orders-list .about-us-item:first-child {
+    margin-top: 25px;
+}
+
+.orders-list .about-us-item:nth-child(2) {
+    margin-top: 23px;
+}
+
+.orders-list .about-us-item:last-child {
+    margin-top: 24px;
 }
 
 .about-us-item span {
