@@ -132,6 +132,7 @@ a {
 
 .basket {
     position: relative;
+    margin-top: 5px;
 }
 
 .basket a {
