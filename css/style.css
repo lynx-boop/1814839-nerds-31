@@ -485,8 +485,8 @@ a {
 
 .slider-controls {
     position: absolute;
-    left: 540px;
-    bottom: 20px;
+    left: 536px;
+    bottom: 16px;
     display: flex;
     column-gap: 17px;
     justify-content: center;
@@ -537,7 +537,7 @@ a {
 
 .service-item h3 {
     margin-bottom: 0;
-    margin-top: 25px;
+    margin-top: 26px;
 }
 
 .service-item p {
