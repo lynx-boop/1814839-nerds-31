@@ -1131,7 +1131,8 @@ a {
 
 .buttons-list {
     display: flex;
-    margin-top: 55px;
+    margin-top: 61px;
+    margin-left: 2px;
     margin-bottom: 60px;
 }
 
