@@ -392,7 +392,8 @@ a {
     padding: 63px 99px 84px 100px;
     background-color: var(--white);
     box-shadow: 0 20px 40px 0 var(--black-transparent-40);
-    display: block;
+    /* display: block; */
+    display: none;
 }
 
 .modal-title {
