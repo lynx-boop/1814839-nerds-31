@@ -358,10 +358,6 @@ a {
     color: var(--black-transparent-30);
 }
 
-.buy-button:hover, .buy-button:active {
-    color: var(--white);
-}
-
 .contacts-adress .button {
     width: 100%;
 }
@@ -456,7 +452,6 @@ a {
 .modal-field input:focus, .modal-field textarea:focus {
     border: 4px solid var(--black);
     outline: none;
-    placeholder: color var(--black);
 }
 
 .modal-field input:focus::placeholder, .modal-field textarea:focus::placeholder {
@@ -1110,11 +1105,11 @@ a {
     margin-top: 31px;
 }
 
-.templates a:hover {
+.hover-red-title:hover {
     color: var(--red-400);
 }
 
-.templates a:active {
+.hover-red-title:active {
     color: var(--black-transparent-30);
 }
 
@@ -1232,10 +1227,16 @@ a {
 
 /* /CATALOG */
 
+/* special */
+
 .not-black {
     color: var(--grey-900);
 }
 
 .not-even-grey-900-you-are-kidding-me {
     color: var(--grey-700);
+}
+
+.buy-button:hover, .buy-button:active {
+    color: var(--white);
 }
