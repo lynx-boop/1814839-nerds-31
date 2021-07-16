@@ -370,6 +370,14 @@ a {
     background-color: var(--grey-330);
 }
 
+.social-button:active {
+    background-color: var(--red-700);
+}
+
+.social-button:active img {
+    opacity: 0.3;
+}
+
 /* модалка */
 
 .modal {
