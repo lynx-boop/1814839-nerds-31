@@ -381,6 +381,15 @@ a {
     opacity: 0.3;
 }
 
+.buy-button {
+    width: 200px;
+    color: var(--white);
+}
+
+.buy-button:hover, .buy-button:active {
+    color: var(--white);
+}
+
 /* модалка */
 
 .modal {
@@ -1258,8 +1267,4 @@ a {
 
 .not-even-grey-900-you-are-kidding-me {
     color: var(--grey-700);
-}
-
-.buy-button:hover, .buy-button:active {
-    color: var(--white);
 }
