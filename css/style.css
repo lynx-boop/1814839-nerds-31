@@ -944,8 +944,20 @@ a {
     opacity: 1;
 }
 
+.filter-input-checkbox:disabled+span::before {
+    opacity: 0.3;
+}
+
 .filter-input-checkbox:disabled+span {
     opacity: 0.3;
+}
+
+.filter-input-checkbox:focus span::before {
+    opacity: 1;
+}
+
+.filter-input-checkbox:focus+span {
+    opacity: 1;
 }
 
 /* радиокнопки */
@@ -982,11 +994,15 @@ a {
     margin-left: 6px;
 }
 
-.filter-radio-item:hover span::before, .filter-radio-item:hover span::after {
+.filter-radio-item:hover span::before, .filter-radio-item:hover span::after, .filter-input-radio:active span::after, .filter-radio-item:active span::before, .filter-radio-item:focus span::before, .filter-radio-item:focus span::after {
     opacity: 1;
 }
 
-.filter-input-radio:disabled+span {
+.filter-input-radio:active span, .filter-input-radio:hover span .filter-input-radio:focus span {
+    opacity: 1;
+}
+
+.filter-input-radio:disabled span, .filter-input-radio:disabled span::before, .filter-input-radio:disabled span::after {
     opacity: .1;
 }
 
