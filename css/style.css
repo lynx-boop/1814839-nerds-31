@@ -226,6 +226,13 @@ a {
     margin: 0;
 }
 
+.footer-phone {
+    margin-bottom: 30px;
+}
+
+/* .footer-phone {
+} */
+
 .social {
     display: flex;
     justify-self: start;
