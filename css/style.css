@@ -235,8 +235,8 @@ a {
     display: flex;
     justify-self: start;
     align-self: center;
-    column-gap: 10px;
     align-items: center;
+    margin-top: 5px;
 }
 
 .social li a {
@@ -249,6 +249,10 @@ a {
     justify-content: center;
 }
 
+.social li+li {
+    margin-left: 9px;
+}
+
 .friendship {
     background-color: var(--white);
     text-align: left;
@@ -257,18 +261,14 @@ a {
     padding: 0;
     margin-top: 32px;
     margin-bottom: 32px;
-    /* фиксировать высоту нельзя 
-    общая высота этой секции футера 217, высота френдшипа 153
-    поэтому марджины по 32
-    коммент себе, чтобы больше не делать глупостей и не переписывать
-    и так рабочий код */
 }
 
 .footer-title {
     font-size: 36px;
-    line-height: 36px;
+    line-height: 32px;
     font-weight: 700;
     margin-left: 13px;
+    margin-top: 42px;
 }
 
 .footer-text {
