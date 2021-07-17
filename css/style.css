@@ -404,7 +404,7 @@ a {
     width: 960px;
     height: min-content;
     margin: auto;
-    padding: 63px 99px 84px 100px;
+    padding: 26px 99px 84px 100px;
     background-color: var(--white);
     box-shadow: 0 20px 40px 0 var(--black-transparent-40);
     display: block;
@@ -421,7 +421,7 @@ a {
 
 .modal-close {
     position: absolute;
-    top: 113px;
+    top: 76px;
     right: 96px;
     width: 21px;
     height: 21px;
@@ -444,7 +444,7 @@ a {
     gap: 34px;
 }
 
-/* изменяется туть и сверху gap */
+/* изменяется туть и сверху gap и еще чуть-чуть в close позишн*/
 
 .modal-field input {
     height: 50px;
