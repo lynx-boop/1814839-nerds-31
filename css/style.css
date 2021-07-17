@@ -407,8 +407,8 @@ a {
     padding: 25px 99px 85px 100px;
     background-color: var(--white);
     box-shadow: 0 20px 40px 0 var(--black-transparent-40);
-    /* display: block; */
-    display: none;
+    display: block;
+    /* display: none; */
 }
 
 .modal-title {
@@ -441,7 +441,8 @@ a {
 .modal-form {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    gap: 34px;
+    row-gap: 36px;
+    column-gap: 40px;
 }
 
 /* изменяется туть и сверху gap и еще чуть-чуть в close позишн*/
