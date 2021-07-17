@@ -983,7 +983,7 @@ a {
     opacity: 0.3;
 }
 
-.filter-input-checkbox:focus span::before {
+.filter-input-checkbox:focus+span::before {
     opacity: 1;
 }
 
@@ -1025,11 +1025,11 @@ a {
     margin-left: 6px;
 }
 
-.filter-radio-item:hover span::before, .filter-radio-item:hover span::after, .filter-input-radio:active span::after, .filter-radio-item:active span::before, .filter-radio-item:focus span::before, .filter-radio-item:focus span::after {
+.filter-radio-item:hover span::before, .filter-radio-item:hover span::after, .filter-radio-item:active span::after, .filter-radio-item:active span::before {
     opacity: 1;
 }
 
-.filter-input-radio:active span, .filter-input-radio:hover span .filter-input-radio:focus span {
+.filter-input-radio:focus+span::before, .filter-input-radio:focus+span::after {
     opacity: 1;
 }
 
@@ -1071,15 +1071,6 @@ a {
     margin: 0;
 }
 
-/* Этот кусок кода нужен ТОЛЬКО для того, чтобы смещать малюсенький кусочек кода на 2 пикселя ниже остальных 
-элементов в списке, чтобы он был точно по ПП */
-
-.sort-list-type .sort-item:first-child {
-    position: absolute;
-    left: 194px;
-    top: 3px;
-}
-
 .sort-item a {
     font-size: 14px;
     line-height: 18px;
@@ -1092,7 +1083,7 @@ a {
     opacity: .6;
 }
 
-.sort-item a:active {
+.sort-item a:active, .sort-item-active a {
     opacity: 1;
 }
 
@@ -1116,27 +1107,26 @@ a {
     height: 10px;
 }
 
-.sort-item-down {
+.sort-button-down {
     background-image: url("../img/catalog/sort-button-down.svg");
     background-repeat: no-repeat;
-    background-position: 0px 10px;
 }
 
-.sort-item-up {
+.sort-button-up {
     background-image: url("../img/catalog/sort-button-up.svg");
     background-repeat: no-repeat;
-    background-position: 0 10px;
 }
 
-.sort-item-up, .sort-item-down {
+.sort-button-up, .sort-button-down {
+    margin-top: 8px;
     opacity: 0.1;
 }
 
-.sort-item-up:hover, .sort-item-down:hover {
+.sort-button-up:hover, .sort-button-down:hover {
     opacity: 0.6;
 }
 
-.sort-item-up:active, .sort-item-down:active {
+.sort-button-up:active, .sort-button-down:active {
     opacity: 1;
 }
 
