@@ -208,22 +208,20 @@ a {
     width: 320px;
     padding: 50px;
     background-color: var(--white);
+    line-height: 18px;
 }
 
 .contacts-adress-inner h3 {
     margin-top: 0;
 }
 
+.contacts-adress-inner p {
+    margin: 0 0 18px;
+}
+
 .contacts-adress-inner p:last-child {
     margin-bottom: 0;
-}
-
-.river {
-    margin-bottom: 0;
-}
-
-.sp {
-    margin: 0;
+    margin-top: 40px;
 }
 
 .footer-phone {
@@ -348,7 +346,7 @@ a {
 
 .filter-button {
     width: 100%;
-    margin-top: 8px;
+    margin-top: 3px;
 }
 
 .filter-button, .page-button {
@@ -385,7 +383,7 @@ a {
 .buy-button {
     width: 200px;
     color: var(--white);
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .buy-button:hover, .buy-button:active {
@@ -1247,7 +1245,7 @@ a {
 
 .buttons-list {
     display: flex;
-    margin-top: 61px;
+    margin-top: 56px;
     margin-left: 2px;
     margin-bottom: 60px;
 }
