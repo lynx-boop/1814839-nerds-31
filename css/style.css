@@ -348,6 +348,7 @@ a {
 
 .filter-button {
     width: 100%;
+    margin-top: 8px;
 }
 
 .filter-button, .page-button {
@@ -624,7 +625,7 @@ a {
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 100px;
-    margin-bottom: 59px;
+    margin-bottom: 53px;
     padding-top: 50px;
     border-top: 2px solid var(--grey-200);
 }
@@ -744,10 +745,14 @@ a {
 }
 
 .partners-list {
-    display: flex;
-    column-gap: 120px;
-    margin: 0px 9px 82px 39px;
-    padding: 41px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+    margin: 0 0 82px 0;
+    padding-top: 45px;
+    padding-bottom: 44px;
+    padding-left: 0;
+    padding-right: 0;
     border-top: 2px solid var(--grey-200);
     border-bottom: 2px solid var(--grey-200);
     justify-content: center;
@@ -755,6 +760,7 @@ a {
 }
 
 .partners-list li {
+    display: flex;
     position: relative;
 }
 
@@ -762,15 +768,21 @@ a {
     content: "";
     position: absolute;
     top: calc(50% - 26px);
-    left: -45px;
+    left: -20px;
     width: 2px;
     height: 52px;
     background-color: var(--grey-200);
 }
 
 .partners-item {
-    display: block;
+    display: flex;
     opacity: 0.2;
+    height: 90px;
+    flex-grow: 1;
+}
+
+.partners-item img {
+    margin: auto;
 }
 
 .partners-item:hover {
@@ -818,8 +830,12 @@ a {
     margin-top: 2px;
 }
 
+.filter-checkbox-list {
+    margin-top: -8px;
+}
+
 .filter-option {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 /* слайдер с ценой */
@@ -932,7 +948,7 @@ a {
     display: block;
     cursor: pointer;
     user-select: none;
-    padding-left: 30px;
+    padding: 2px 0 2px 30px;
 }
 
 .filter-parameter-item span {
@@ -943,7 +959,7 @@ a {
     content: "";
     position: absolute;
     left: 0;
-    top: -7px;
+    top: 0;
     width: 25px;
     height: 23px;
     background-image: url("../img/catalog/checkbox-off.svg");
