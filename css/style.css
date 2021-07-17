@@ -211,12 +211,15 @@ a {
     line-height: 18px;
 }
 
+/* изменялось вот тут */
+
 .contacts-adress-inner h3 {
-    margin-top: 0;
+    margin-top: -3px;
+    margin-bottom: 24px;
 }
 
 .contacts-adress-inner p {
-    margin: 0 0 18px;
+    margin: 0 0 16px;
 }
 
 .contacts-adress-inner p:last-child {
