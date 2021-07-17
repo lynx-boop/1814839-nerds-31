@@ -407,8 +407,8 @@ a {
     padding: 63px 99px 84px 100px;
     background-color: var(--white);
     box-shadow: 0 20px 40px 0 var(--black-transparent-40);
-    /* display: block; */
-    display: none;
+    display: block;
+    /* display: none; */
 }
 
 .modal-title {
@@ -421,8 +421,8 @@ a {
 
 .modal-close {
     position: absolute;
-    top: 120px;
-    right: 95px;
+    top: 113px;
+    right: 96px;
     width: 21px;
     height: 21px;
     background-color: transparent;
@@ -441,8 +441,21 @@ a {
 .modal-form {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    gap: 40px;
+    gap: 34px;
 }
+
+/* изменяется туть и сверху gap */
+
+.modal-field input {
+    height: 50px;
+}
+
+.modal-send {
+    grid-column: span 3;
+    margin-top: 14px;
+}
+
+/* /изменяется туть */
 
 .modal-field {
     display: grid;
@@ -488,10 +501,6 @@ a {
 
 .modal-field-wide {
     grid-column: 1 / -1;
-}
-
-.modal-send {
-    grid-column: span 3;
 }
 
 /* /COMMON */
